@@ -9,6 +9,7 @@
     <sprite>sprites\spr_ground</sprite>
     <sprites name="Towers">
       <sprite>sprites\spr_dispenser</sprite>
+      <sprite>sprites\spr_sugarlaser</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -16,25 +17,78 @@
     <sprites name="Tower Projectiles">
       <sprite>sprites\spr_jawbreaker</sprite>
     </sprites>
+    <sprites name="Start Menu">
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_options</sprite>
+      <sprite>sprites\spr_quit</sprite>
+    </sprites>
+    <sprites name="GUI - Towers">
+      <sprite>sprites\spr_tower1</sprite>
+      <sprite>sprites\spr_tower2</sprite>
+    </sprites>
+    <sprites name="GUI - Interface">
+      <sprite>sprites\spr_marker</sprite>
+      <sprite>sprites\spr_tempMenu</sprite>
+      <sprite>sprites\spr_tempScoreBoard</sprite>
+      <sprite>sprites\spr_sell</sprite>
+      <sprite>sprites\spr_upgrade</sprite>
+    </sprites>
+    <sprite>sprites\Marshy</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_end</background>
+  </backgrounds>
   <paths name="paths">
-    <path>paths\path_lvl_1</path>
+    <path>paths\path_lvl1</path>
   </paths>
+  <scripts name="scripts">
+    <scripts name="Interface">
+      <script>scripts\scr_grid.gml</script>
+      <script>scripts\scr_menu.gml</script>
+      <script>scripts\scr_wave.gml</script>
+    </scripts>
+    <scripts name="Towers">
+      <script>scripts\scr_towerGhost.gml</script>
+      <script>scripts\scr_towerRange.gml</script>
+      <script>scripts\scr_towerDeselect.gml</script>
+      <script>scripts\scr_shoot.gml</script>
+      <script>scripts\scr_laserbeam.gml</script>
+      <script>scripts\scr_jawbreaker.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
-    <object>objects\obj_ground</object>
+    <objects name="Menu">
+      <object>objects\obj_start</object>
+      <object>objects\obj_options</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_Marshy</object>
+    </objects>
     <objects name="Tower Projectile">
       <object>objects\obj_jawbreaker</object>
     </objects>
     <objects name="Towers">
-      <object>objects\obj_tower1</object>
+      <object>objects\obj_sugarlaser</object>
+      <object>objects\obj_dispenser</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_enemy</object>
     </objects>
+    <objects name="GUI">
+      <object>objects\obj_t1Button</object>
+      <object>objects\obj_t2Button</object>
+      <object>objects\obj_controller</object>
+      <object>objects\obj_marker</object>
+      <object>objects\obj_gameover</object>
+      <object>objects\obj_sell</object>
+      <object>objects\obj_upgrade</object>
+    </objects>
+    <object>objects\obj_wave</object>
+    <object>objects\obj_ground</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\home</room>
+    <room>rooms\level_1</room>
+    <room>rooms\rm_end</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
