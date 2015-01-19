@@ -5,3 +5,4 @@ if (target != noone && firing = 1){
     target.hp -= damage;
     if (target.hp < 1) target = noone;
 }
+draw_set_color(c_black);

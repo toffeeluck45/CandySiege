@@ -1,4 +1,4 @@
-Group Name:	Candy K.A.N.E
+﻿Group Name:	Candy K.A.N.E.
 	
 Group Members:	      Kristoffer Ray G. Corral
                     	Abi Gae Tresvalles

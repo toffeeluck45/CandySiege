@@ -149,11 +149,11 @@ if(!collision_rectangle(x-32,y-32,x+32,y+32,obj_sugarlaser,0,1)) coll_path = 0;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>16</string>
+            <string>32</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>16</string>
+            <string>32</string>
           </argument>
         </arguments>
       </action>
