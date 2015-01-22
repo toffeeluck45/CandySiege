@@ -32,11 +32,12 @@
       <sprite>sprites\spr_tempScoreBoard</sprite>
       <sprite>sprites\spr_sell</sprite>
       <sprite>sprites\spr_upgrade</sprite>
+      <sprite>sprites\Marshy</sprite>
     </sprites>
-    <sprite>sprites\Marshy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_end</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_lvl1</path>
@@ -86,7 +87,7 @@
     <object>objects\obj_ground</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\home</room>
+    <room>rooms\rm_mainmenu</room>
     <room>rooms\level_1</room>
     <room>rooms\rm_end</room>
   </rooms>

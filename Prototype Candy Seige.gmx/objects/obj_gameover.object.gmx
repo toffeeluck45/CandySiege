@@ -51,7 +51,7 @@ draw_text(room_width/2, room_height/2, "GAME OVER#(press ENTER to exit to the Ma
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(home);
+            <string>room_goto(rm_mainmenu);
 </string>
           </argument>
         </arguments>

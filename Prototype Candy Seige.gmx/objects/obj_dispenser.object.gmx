@@ -241,6 +241,7 @@ name = "JB Dispenser Tower"
 }
 else{
     draw_self();
+    draw_text(x, y, level);
     if(selected == 1) scr_towerRange();
 }
 </string>

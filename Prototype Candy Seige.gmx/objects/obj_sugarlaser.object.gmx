@@ -359,6 +359,7 @@ if(active == 0){
 }
 else{
     draw_self();
+    draw_text(x,y,level);
     scr_laserbeam();
     if(selected == 1) scr_towerRange();
 }

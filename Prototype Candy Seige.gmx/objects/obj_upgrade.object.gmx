@@ -56,16 +56,19 @@ else {
             <string>if(visible = 1){
     var ii;
     ii = obj_controller.ii_select;
-    if ii.level &lt; 5
-    if(obj_controller.money &gt;= price){
-        obj_controller.money -= price;
-        ii.damage = round(ii.damage*1.1);
-        ii.range = round(ii.range*1.1);
-        ii.rate = min(ii.rate*1.2,10);
-        ii.price = round(ii.price*1.5);
-        ii.level += 1;
+    if(ii.level &lt; 5){
+        if(obj_controller.money &gt;= price){
+            obj_controller.money -= price;
+            ii.damage = round(ii.damage*1.1);
+            ii.range = round(ii.range*1.1);
+            ii.rate = min(ii.rate*1.2,10);
+            ii.price = round(ii.price*1.5);
+            ii.level += 1;
+        }
     }
 }
+
+ii.active = 1;
 </string>
           </argument>
         </arguments>

@@ -14,8 +14,7 @@ if(wave_time < 600){
     countdown -= 1;
 }
 if(wave_enemies > 0){
-    if (wave_time == (ee-wave_enemies)*30+15)
-    {
+    if (wave_time == (ee-wave_enemies)*30+15){
         instance_create(-32,0,obj_enemy);
         wave_enemies -= 1;
     }   

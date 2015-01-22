@@ -10,5 +10,6 @@ if instance_exists(obj_enemy)
     else if (firing = 0)
         firing = 1;
 }
+
 if(firing = 1) depth = -3;
 else depth = -2;
