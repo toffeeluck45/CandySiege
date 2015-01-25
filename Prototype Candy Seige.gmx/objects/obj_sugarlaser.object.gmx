@@ -25,18 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>firing = 0;
-active = 1;
-coll_path = 0;
-target = noone;
-selected = 0;
-
+            <string>//Tower Stats
+name = 'Sugarlaser';
+damage = 20;
 range = 100;
 rate = 1;
-damage = 20;
 price = 10;
-name = 'Sugarlaser Tower';
+
+//Status
+firing = 0;
+active = 1;
+target = noone;
+selected = 0;
 level = 0;
+
+//GUI Status
+coll_path = 0;
 </string>
           </argument>
         </arguments>

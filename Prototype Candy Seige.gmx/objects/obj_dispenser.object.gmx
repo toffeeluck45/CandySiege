@@ -27,10 +27,12 @@
             <kind>1</kind>
             <string>event_inherited();
 
-range = 150;
+//Tower Stats
+name = "Jawbreaker"
 damage = 25;
-price = 20;
-name = "JB Dispenser Tower"
+range = 150;
+rate = 1;
+price = 10;
 </string>
           </argument>
         </arguments>

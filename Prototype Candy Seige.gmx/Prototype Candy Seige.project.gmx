@@ -17,10 +17,12 @@
     <sprites name="Tower Projectiles">
       <sprite>sprites\spr_jawbreaker</sprite>
     </sprites>
-    <sprites name="Start Menu">
+    <sprites name="Main Menu *">
       <sprite>sprites\spr_start</sprite>
       <sprite>sprites\spr_options</sprite>
       <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_setFS</sprite>
+      <sprite>sprites\spr_main</sprite>
     </sprites>
     <sprites name="GUI - Towers">
       <sprite>sprites\spr_tower1</sprite>
@@ -58,11 +60,13 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <objects name="Menu">
+    <objects name="Menu *">
       <object>objects\obj_start</object>
       <object>objects\obj_options</object>
       <object>objects\obj_quit</object>
       <object>objects\obj_Marshy</object>
+      <object>objects\obj_checkbox</object>
+      <object>objects\obj_main</object>
     </objects>
     <objects name="Tower Projectile">
       <object>objects\obj_jawbreaker</object>
@@ -88,8 +92,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
-    <room>rooms\level_1</room>
+    <room>rooms\rm_options</room>
     <room>rooms\rm_end</room>
+    <room>rooms\rm_lvl1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -75,7 +75,7 @@ if(mouse_check_button_pressed(mb_right)){
 scr_towerDeselect();
 scr_wave();
 
-if(lives ==0){
+if(lives == 0){
     room_goto(rm_end);
 }
 </string>
@@ -116,7 +116,7 @@ if(ii_select != noone){
 //Score, Lives and Wave Time
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
-draw_text(20, 13, 'Lives: ' + string(lives) + '#Score: ' + string(score) + '#Next Wave in: ' + string(countdown));
+draw_text(20, 13, 'Lives: ' + string(lives) + '#Firing: ' + string(ii_select.firing) + '#Next Wave in: ' + string(countdown));
 </string>
           </argument>
         </arguments>
@@ -144,6 +144,7 @@ draw_text(20, 13, 'Lives: ' + string(lives) + '#Score: ' + string(score) + '#Nex
     wave_time = 0;
     wave_enemies = min(5+floor(wave*0.4),16);
     ee = wave_enemies;
+    countdown = 600;
 }
 </string>
           </argument>

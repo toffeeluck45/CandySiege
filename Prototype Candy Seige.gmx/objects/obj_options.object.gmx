@@ -49,12 +49,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_options, 0, x, y);
-
-if(position_meeting(mouse_x, mouse_y, self))
-    draw_sprite(spr_options, 1, x, y);
+            <string>if(position_meeting(mouse_x, mouse_y, self))
+    sprite_index = spr_options;
 else
-    draw_sprite(spr_options, 0, x, y);
+    sprite_index = spr_options;
+    
+draw_self();
 </string>
           </argument>
         </arguments>
@@ -72,5 +72,8 @@ else
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>150,50</point>
+    <point>150,150</point>
+  </PhysicsShapePoints>
 </object>
