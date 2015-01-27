@@ -61,7 +61,7 @@ else {
             obj_controller.money -= price;
             ii.damage = round(ii.damage*1.1);
             ii.range = round(ii.range*1.1);
-            //ii.rate = min(ii.rate*1.2,10);
+            ii.rate = ii.rate - ceil(ii.rate*0.10);
             ii.price = round(ii.price*1.5);
             ii.level += 1;
         }

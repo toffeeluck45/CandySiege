@@ -71,7 +71,7 @@
     <objects name="Tower Projectile">
       <object>objects\obj_jawbreaker</object>
     </objects>
-    <objects name="Towers">
+    <objects name="Towers*">
       <object>objects\obj_sugarlaser</object>
       <object>objects\obj_dispenser</object>
     </objects>
