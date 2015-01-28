@@ -464,6 +464,7 @@
     <instance objName="obj_marker" x="32" y="64" name="inst_1F27C5CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sell" x="704" y="0" name="inst_C1C18617" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upgrade" x="736" y="0" name="inst_51A1FC6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btnPiping" x="192" y="544" name="inst_C76E5267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="288" y="256" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_7988F2C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

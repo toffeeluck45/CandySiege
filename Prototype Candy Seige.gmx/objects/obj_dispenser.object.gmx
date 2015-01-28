@@ -244,7 +244,7 @@ price = 15;
 else{
     draw_self();
     draw_text(x, y, level);
-    if(selected == 1) scr_towerRange();
+    if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
 </string>
           </argument>

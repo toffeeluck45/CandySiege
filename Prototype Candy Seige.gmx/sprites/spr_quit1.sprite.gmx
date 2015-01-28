@@ -20,9 +20,9 @@
   <width>200</width>
   <height>200</height>
   <frames>
-    <frame index="0">images\spr_quit_0.png</frame>
+    <frame index="0">images\spr_quit1_0.png</frame>
   </frames>
-  <SWFfile>images\spr_quit.swf</SWFfile>
+  <SWFfile>images\spr_quit1.swf</SWFfile>
   <SWFnumframes>1</SWFnumframes>
   <SWFprecision>0.05</SWFprecision>
 </sprite>

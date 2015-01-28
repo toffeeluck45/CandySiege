@@ -10,6 +10,7 @@
     <sprites name="Towers">
       <sprite>sprites\spr_dispenser</sprite>
       <sprite>sprites\spr_sugarlaser</sprite>
+      <sprite>sprites\spr_piping</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -18,15 +19,20 @@
       <sprite>sprites\spr_jawbreaker</sprite>
     </sprites>
     <sprites name="Main Menu *">
-      <sprite>sprites\spr_start</sprite>
-      <sprite>sprites\spr_options</sprite>
-      <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_start1</sprite>
+      <sprite>sprites\spr_start2</sprite>
+      <sprite>sprites\spr_options1</sprite>
+      <sprite>sprites\spr_options2</sprite>
+      <sprite>sprites\spr_quit1</sprite>
+      <sprite>sprites\spr_quit2</sprite>
       <sprite>sprites\spr_setFS</sprite>
       <sprite>sprites\spr_main</sprite>
     </sprites>
     <sprites name="GUI - Towers">
       <sprite>sprites\spr_tower1</sprite>
       <sprite>sprites\spr_tower2</sprite>
+      <sprite>sprites\btn_piping1</sprite>
+      <sprite>sprites\btn_piping2</sprite>
     </sprites>
     <sprites name="GUI - Interface">
       <sprite>sprites\spr_marker</sprite>
@@ -55,8 +61,11 @@
       <script>scripts\scr_towerRange.gml</script>
       <script>scripts\scr_towerDeselect.gml</script>
       <script>scripts\scr_shoot.gml</script>
-      <script>scripts\scr_laserbeam.gml</script>
-      <script>scripts\scr_jawbreaker.gml</script>
+      <scripts name="Tower Projectiles">
+        <script>scripts\scr_jawbreaker.gml</script>
+        <script>scripts\scr_laserbeam.gml</script>
+        <script>scripts\scr_icing.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -74,11 +83,13 @@
     <objects name="Towers*">
       <object>objects\obj_sugarlaser</object>
       <object>objects\obj_dispenser</object>
+      <object>objects\obj_pipingTurret</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_enemy</object>
     </objects>
     <objects name="GUI">
+      <object>objects\obj_btnPiping</object>
       <object>objects\obj_t1Button</object>
       <object>objects\obj_t2Button</object>
       <object>objects\obj_controller</object>
