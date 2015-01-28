@@ -31,6 +31,7 @@ damage = 20;
 range = 100;
 rate = 30;
 price = 10;
+alarm[0] = rate;
 
 //Status
 firing = 0;
@@ -246,7 +247,10 @@ if(!collision_rectangle(x-32,y-32,x+32,y+32,obj_sugarlaser,0,1)) coll_path = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_shoot();
+            <string>if(target != noone)
+    image_angle = point_direction(x+25, y-1, target.x, target.y);
+
+scr_shoot();
 </string>
           </argument>
         </arguments>
@@ -363,9 +367,9 @@ if(active == 0){
 }
 else{
     draw_self();
-    draw_text(x,y,level);
+    draw_text(x, y, level);
     scr_laserbeam();
-    if(selected == 1) scr_towerRange();
+    if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
 </string>
           </argument>

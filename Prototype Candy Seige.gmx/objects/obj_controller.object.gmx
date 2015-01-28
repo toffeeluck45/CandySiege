@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>money = 30;
+            <string>//Global elements
+money = 30;
 lives = 5;
 score = 0;
 
+//Wave Timers
 wave = 0;
 wave_time = 0;
 wave_enemies = 0;
@@ -59,8 +61,11 @@ ii_select = noone;
             <kind>1</kind>
             <string>//Check whether the tower should be deselected
 scr_towerDeselect();
+
+//Wave system
 scr_wave();
 
+//End Game
 if(lives == 0){
     room_goto(rm_end);
 }
