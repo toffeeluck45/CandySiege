@@ -197,10 +197,10 @@ if(mouse_check_button_pressed(mb_right))
           <argument>
             <kind>1</kind>
             <string>//Point towards enemy
-if(target != noone &amp;&amp; target.hp != 0)
-    image_angle = point_direction(x+25, y-1, target.x, target.y);
+if(target != noone)
+    image_angle = point_direction(x+25, y+1, target.x, target.y);
     
-scr_icing();
+scr_shoot();
 </string>
           </argument>
         </arguments>
@@ -230,6 +230,7 @@ scr_icing();
 else{
     draw_self();
     draw_text(x, y, level);
+    scr_icing();
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
 </string>
