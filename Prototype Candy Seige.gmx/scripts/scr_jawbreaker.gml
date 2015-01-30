@@ -1,5 +1,7 @@
 var ii, dist, xx, yy;
 var length = 30;
+
+//Tower cooldown
 if(firing > 0) firing += 1;
 if(firing = rate) firing = 0;
 

@@ -52,7 +52,7 @@ price = 10;
             <kind>1</kind>
             <string>var ii;
 if (instance_position(mouse_x, mouse_y, obj_pipingTurret)) exit;
-if (obj_controller.money &lt; price) exit;
+if (controller.money &lt; price) exit;
 ii = instance_create(x, y, obj_pipingTurret);
 ii.active = 0;
 </string>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_controller.ii_select = noone) visible = 0;
+            <string>if(controller.ii_select = noone) visible = 0;
 else visible = 1;
 </string>
           </argument>
@@ -51,10 +51,10 @@ else visible = 1;
             <kind>1</kind>
             <string>if(visible = 1){
     var ii;
-    ii = obj_controller.ii_select;
-    obj_controller.money += floor(ii.price/2);
+    ii = controller.ii_select;
+    controller.money += floor(ii.price/2);
     with(ii) instance_destroy();
-    obj_controller.ii_select = noone;
+    controller.ii_select = noone;
 }
 </string>
           </argument>

@@ -229,7 +229,9 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(target != noone)
+            <string>//Target checker
+if(!instance_exists(target)) target = noone;
+if(target != noone)
     image_angle = point_direction(x+25, y-1, target.x, target.y);
 
 scr_shoot();
@@ -311,14 +313,14 @@ scr_shoot();
     if(selected = 0){
         obj_sugarlaser.selected = 0;
         selected = 1;
-        obj_controller.ii_select = instance_position(x,y,obj_sugarlaser);
+        ontroller.ii_select = instance_position(x,y,obj_sugarlaser);
     }
 }
 
 if(active == 0){
     if (coll_path = 0){
         active = 1;
-        obj_controller.money -= price;
+        controller.money -= price;
     }
 }
 </string>

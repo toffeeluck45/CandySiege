@@ -46,7 +46,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_end</background>
-    <background>background\background1</background>
+    <background>background\bg_mainmenu</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_lvl1</path>
@@ -58,9 +58,10 @@
       <script>scripts\scr_wave.gml</script>
     </scripts>
     <scripts name="Towers">
+      <script>scripts\scr_towerDeselect.gml</script>
       <script>scripts\scr_towerGhost.gml</script>
       <script>scripts\scr_towerRange.gml</script>
-      <script>scripts\scr_towerDeselect.gml</script>
+      <script>scripts\scr_towerRotation.gml</script>
       <script>scripts\scr_shoot.gml</script>
       <scripts name="Tower Projectiles">
         <script>scripts\scr_jawbreaker.gml</script>
@@ -93,11 +94,11 @@
       <object>objects\obj_btnPiping</object>
       <object>objects\obj_btnGumball</object>
       <object>objects\obj_t1Button</object>
-      <object>objects\obj_controller</object>
       <object>objects\obj_marker</object>
       <object>objects\obj_gameover</object>
       <object>objects\obj_sell</object>
       <object>objects\obj_upgrade</object>
+      <object>objects\controller</object>
     </objects>
     <object>objects\obj_wave</object>
     <object>objects\obj_ground</object>

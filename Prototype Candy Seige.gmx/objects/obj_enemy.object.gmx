@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>path_start(path_lvl1,2,0,1);
 
-hp = round(40+power(obj_controller.wave,1.5)*10);
+hp = round(40+power(controller.wave,1.5)*10);
 
 hpBuff = 100;
 </string>
@@ -54,8 +54,8 @@ hpBuff = 100;
             <kind>1</kind>
             <string>if(hp &lt;= 0){
     instance_destroy();
-    obj_controller.money += obj_controller.wave;
-    score += obj_controller.wave;
+    controller.money += controller.wave;
+    score += controller.wave;
 }
 </string>
           </argument>

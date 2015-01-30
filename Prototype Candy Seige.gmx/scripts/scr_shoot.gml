@@ -1,7 +1,9 @@
+//Tower Cooldown
 if(firing > 0) firing += 1;
 if (firing == rate) firing = 0;
 
-//if (!instance_exists(target)) target = noone;
+//Emeny in Range
+if (!instance_exists(target)) target = noone;
 if(instance_exists(obj_enemy)){
     if(target == noone) target = instance_nearest(x, y, obj_enemy);
     if(point_distance(x,y,target.x,target.y) > range)
@@ -10,6 +12,7 @@ if(instance_exists(obj_enemy)){
         firing = 1;
 }
 
+//Depth Settings
 if(firing = 1) depth = -3;
 else depth = -2;
 
