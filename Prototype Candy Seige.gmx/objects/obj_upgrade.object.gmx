@@ -3,7 +3,7 @@
   <spriteName>spr_upgrade</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -64,7 +64,6 @@ else {
             ii.rate = ii.rate - floor(ii.rate*0.10);
             ii.price = round(ii.price*1.5);
             ii.level += 1;
-            ii.firing = 0;
         }
     }
 }
@@ -101,7 +100,6 @@ else {
             ii.rate = ii.rate - floor(ii.rate*0.10);
             ii.price = round(ii.price*1.5);
             ii.level += 1;
-            ii.firing = 0;
         }
     }
 }

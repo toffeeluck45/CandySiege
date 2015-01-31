@@ -234,8 +234,6 @@ if(mouse_check_button_pressed(mb_right))
 if(!instance_exists(target)) target = noone;
 if(target != noone){
     image_angle = point_direction(x, y, target.x, target.y);
-    /*target_pos = point_direction(x, y, target.x, target.y);
-    src_towerRotation(image_angle, target_pos, 5);*/
 }
 
 scr_icing();

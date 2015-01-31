@@ -91,19 +91,26 @@ if(lives == 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_tempMenu, 0, 0, 489);
+            <string>//HUD
+draw_sprite(spr_scoreboard, 0, 0, 512);
+draw_sprite(spr_towerSlots, 0, 335, 550);
 draw_sprite(spr_tempScoreBoard, 0, 0, 0);
 
-//Tower Slots
+//Tower Stats HUD
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
-draw_text(20, 500, 'GAME MENU#Magic Sugar: ' + string(money));
+draw_text(94, 527, 'Score: ' + string(score) + '#Magic Sugar: ' + string(money));
+
+//Selected Tower Stats
+if(ii_select != noone){
+    draw_text(20, 550, 'Damage: ' + string(ii_select.damage) + ' HP');
+}
 
 //Tower Stats
 if(ii_select != noone){
-    draw_text(200,515,'Damage: '+string(ii_select.damage)+' HP');
-    draw_text(20,530,'Selling price: '+ string(floor(ii_select.price/2)) + '      Upgrade Price: ' + string(ii_select.price*0.4));
+    draw_text(20,530,'Upgrade Price: ' + string(ii_select.price*0.4));
 }
+
 //Score, Lives and Wave Time
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
