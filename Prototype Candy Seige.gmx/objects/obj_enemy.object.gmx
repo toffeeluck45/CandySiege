@@ -126,7 +126,10 @@ lives -= 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>image_xscale = 0.0625;
+image_yscale = image_xscale;
+image_angle = 90;
+draw_self();
 
 if(position_meeting(mouse_x, mouse_y, self)){
     draw_set_alpha(0.8);

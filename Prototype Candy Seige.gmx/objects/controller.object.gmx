@@ -103,12 +103,12 @@ draw_text(94, 527, 'Score: ' + string(score) + '#Magic Sugar: ' + string(money))
 
 //Selected Tower Stats
 if(ii_select != noone){
-    draw_text(20, 550, 'Damage: ' + string(ii_select.damage) + ' HP');
+    draw_text(94, 560, 'Damage: ' + string(ii_select.damage) + ' HP');
 }
 
 //Tower Stats
 if(ii_select != noone){
-    draw_text(20,530,'Upgrade Price: ' + string(ii_select.price*0.4));
+    draw_text(94,575,'Upgrade Price: ' + string(ii_select.price*0.4));
 }
 
 //Score, Lives and Wave Time

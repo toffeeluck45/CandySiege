@@ -1,6 +1,6 @@
 //Tower Cooldown
 if(firing > 0) firing += 1;
-if (firing == rate) firing = 0;
+if (firing >= rate) firing = 0;
 
 //Emeny in Range
 if (!instance_exists(target)) target = noone;
