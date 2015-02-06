@@ -50,6 +50,7 @@
   <backgrounds name="background">
     <background>background\bg_end</background>
     <background>background\bg_mainmenu</background>
+    <background>background\bg_lvl1</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_lvl1</path>
@@ -70,6 +71,9 @@
         <script>scripts\scr_laserbeam.gml</script>
         <script>scripts\scr_icing.gml</script>
       </scripts>
+    </scripts>
+    <scripts name="Enemies">
+      <script>scripts\scr_enemyTurn.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
