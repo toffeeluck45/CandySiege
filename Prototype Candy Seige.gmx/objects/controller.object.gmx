@@ -68,6 +68,8 @@ scr_wave();
 //End Game
 if(lives == 0){
     room_goto(rm_end);
+    audio_stop_sound(bgm_game);
+    audio_play_sound(sfx_gameover, 100, 0);
 }
 </string>
           </argument>

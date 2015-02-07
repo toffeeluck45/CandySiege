@@ -236,7 +236,7 @@ if(target != noone){
     image_angle = point_direction(x, y, target.x, target.y);
 }
 
-scr_icing();
+scr_frosting();
 </string>
           </argument>
         </arguments>

@@ -127,11 +127,12 @@ lives -= 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 0.0625;
+            <string>//Sprite down scaled
+image_xscale = 0.0625;
 image_yscale = image_xscale;
 
-//Rotate through curve
-scr_enemyTurn();
+//To make enemies face the right direction
+image_angle = direction;
 
 draw_self();
 
