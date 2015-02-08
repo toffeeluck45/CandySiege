@@ -3,7 +3,7 @@
   <spriteName>spr_sugarlaser</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_pipingTurret</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,46 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Tower Stats
-name = 'Sugarlaser';
-damage = 20;
-range = 100;
+            <string>event_inherited();
+
+//Tower Stats
+name = "SugarLaser";
+damage = 25;
+range = 150;
 rate = 30;
 price = 10;
-
-//Status
-firing = 0;
-active = 1;
-target = noone;
-selected = 0;
-level = 0;
-
-//GUI Status
-coll_path = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(!collision_rectangle(x-32,y-32,x+32,y+32,obj_marker,0,1))
-if(!collision_rectangle(x-32,y-32,x+32,y+32,obj_sugarlaser,0,1)) coll_path = 0;
 </string>
           </argument>
         </arguments>
@@ -177,9 +145,9 @@ if(!collision_rectangle(x-32,y-32,x+32,y+32,obj_sugarlaser,0,1)) coll_path = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.4;
-image_angle = 90;
+            <string>image_angle = 90;
 
+//Deselect by right-click
 if(mouse_check_button_pressed(mb_right)) instance_destroy();
 </string>
           </argument>
@@ -229,100 +197,15 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Target checker
+            <string>var target_pos;
+
+//Point towards enemy
 if(!instance_exists(target)) target = noone;
-if(target != noone)
-    image_angle = point_direction(x+25, y-1, target.x, target.y);
+if(target != noone){
+    image_angle = point_direction(x, y, target.x, target.y);
+}
 
 scr_shoot();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_marker">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>coll_path</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_sugarlaser">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>coll_path</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(active = 1){
-    if(selected = 0){
-        obj_sugarlaser.selected = 0;
-        selected = 1;
-        controller.ii_select = instance_position(x,y,obj_sugarlaser);
-    }
-}
-
-if(active == 0){
-    if (coll_path = 0){
-        active = 1;
-        controller.money -= price;
-    }
-}
 </string>
           </argument>
         </arguments>

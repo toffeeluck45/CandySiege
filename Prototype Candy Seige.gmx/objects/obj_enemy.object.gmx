@@ -52,7 +52,8 @@ hpBuff = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hp &lt;= 0){
+            <string>//Upon Death
+if(hp &lt;= 0){
     instance_destroy();
     controller.money += controller.wave;
     score += controller.wave;
@@ -126,9 +127,13 @@ lives -= 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 0.0625;
+            <string>//Sprite down scaled
+image_xscale = 0.0625;
 image_yscale = image_xscale;
-image_angle = 90;
+
+//To make enemies face the right direction
+image_angle = direction;
+
 draw_self();
 
 if(position_meeting(mouse_x, mouse_y, self)){

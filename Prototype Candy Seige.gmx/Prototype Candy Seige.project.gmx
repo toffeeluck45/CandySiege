@@ -4,13 +4,25 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Background Music">
+      <sound>sound\bgm_mainmenu</sound>
+      <sound>sound\bgm_game</sound>
+    </sounds>
+    <sounds name="Sound Effects">
+      <sound>sound\sfx_gameover</sound>
+      <sound>sound\sfx_frosting</sound>
+      <sound>sound\sfx_gumball</sound>
+      <sound>sound\sfx_sugarlaser</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_ground</sprite>
     <sprites name="Towers">
       <sprite>sprites\spr_piping</sprite>
       <sprite>sprites\spr_gumball</sprite>
       <sprite>sprites\spr_sugarlaser</sprite>
+      <sprite>sprites\spr_blowtorch</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -34,6 +46,7 @@
       <sprite>sprites\btn_gumball1</sprite>
       <sprite>sprites\btn_gumball2</sprite>
       <sprite>sprites\spr_tower2</sprite>
+      <sprite>sprites\btn_blowtorch</sprite>
     </sprites>
     <sprites name="GUI - Interface">
       <sprite>sprites\spr_marker</sprite>
@@ -48,6 +61,7 @@
   <backgrounds name="background">
     <background>background\bg_end</background>
     <background>background\bg_mainmenu</background>
+    <background>background\bg_lvl1</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_lvl1</path>
@@ -66,7 +80,7 @@
       <scripts name="Tower Projectiles">
         <script>scripts\scr_jawbreaker.gml</script>
         <script>scripts\scr_laserbeam.gml</script>
-        <script>scripts\scr_icing.gml</script>
+        <script>scripts\scr_frosting.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -84,17 +98,20 @@
     </objects>
     <objects name="Towers*">
       <object>objects\obj_pipingTurret</object>
-      <object>objects\obj_sugarlaser</object>
       <object>objects\obj_dispenser</object>
+      <object>objects\obj_sugarlaser</object>
+      <object>objects\obj_blowtorch</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_enemy</object>
     </objects>
     <objects name="GUI">
       <object>objects\controller</object>
+      <object>objects\obj_bgmController</object>
       <object>objects\obj_btnPiping</object>
       <object>objects\obj_btnGumball</object>
       <object>objects\obj_t1Button</object>
+      <object>objects\obj_btnBlowtorch</object>
       <object>objects\obj_marker</object>
       <object>objects\obj_gameover</object>
       <object>objects\obj_sell</object>
