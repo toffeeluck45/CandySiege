@@ -26,7 +26,8 @@
       <sprite>sprites\spr_blowtorch</sprite>
     </sprites>
     <sprites name="Enemy">
-      <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\spr_ant</sprite>
+      <sprite>sprites\spr_deathAnt</sprite>
     </sprites>
     <sprites name="Tower Projectiles">
       <sprite>sprites\spr_jawbreaker</sprite>
