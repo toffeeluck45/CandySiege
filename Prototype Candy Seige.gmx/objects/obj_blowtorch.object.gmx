@@ -28,11 +28,11 @@
             <string>event_inherited();
 
 //Tower Stats
-name = "Blowtorch";
-damage = 20;
+name = "Blowtorch"
+damage = 25;
 range = 150;
 rate = 30;
-price = 10;
+price = 15;
 </string>
           </argument>
         </arguments>
@@ -214,7 +214,13 @@ price = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_jawbreaker();
+            <string>//Point towards enemy
+/*if(!instance_exists(target)) target = noone;
+if(target != noone){
+    image_angle = point_direction(x, y, target.x, target.y) - 90;
+}*/
+
+scr_jawbreaker();
 </string>
           </argument>
         </arguments>
@@ -264,7 +270,7 @@ else{
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,0</point>
+    <point>32,32</point>
     <point>32,32</point>
   </PhysicsShapePoints>
 </object>

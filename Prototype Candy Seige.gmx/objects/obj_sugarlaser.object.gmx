@@ -199,12 +199,6 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
             <kind>1</kind>
             <string>var target_pos;
 
-//Point towards enemy
-if(!instance_exists(target)) target = noone;
-if(target != noone){
-    image_angle = point_direction(x, y, target.x, target.y);
-}
-
 scr_shoot();
 </string>
           </argument>
@@ -228,13 +222,21 @@ scr_shoot();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(active == 0){
+            <string>image_index = level;
+
+//Point towards enemy
+if(!instance_exists(target)) target = noone;
+if(target != noone){
+    image_angle = point_direction(x, y, target.x, target.y);
+}
+
+if(active == 0){
     scr_towerGhost();
     scr_grid();
 }
 else{
     draw_self();
-    draw_text(x, y, level);
+    //draw_text(x, y, level);
     scr_laserbeam();
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }

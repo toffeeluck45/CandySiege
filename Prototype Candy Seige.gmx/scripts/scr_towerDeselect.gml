@@ -1,6 +1,6 @@
 // Get Object Position on screen
 var towerPos = instance_position(mouse_x, mouse_y, obj_pipingTurret);
-var towerButton = instance_position(mouse_x,mouse_y,obj_t1Button);
+var towerButton = instance_position(mouse_x,mouse_y,obj_btnSugarlaser);
 var upgradeButton = instance_position(mouse_x, mouse_y, obj_upgrade);
 
 if(upgradeButton) exit;

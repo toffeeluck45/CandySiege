@@ -214,7 +214,13 @@ price = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_jawbreaker();
+            <string>//Point towards enemy
+if(!instance_exists(target)) target = noone;
+if(target != noone){
+    image_angle = point_direction(x, y, target.x, target.y) - 90;
+}
+
+scr_jawbreakertest();
 </string>
           </argument>
         </arguments>

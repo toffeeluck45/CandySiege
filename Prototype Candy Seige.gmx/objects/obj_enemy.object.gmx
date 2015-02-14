@@ -129,7 +129,9 @@ lives -= 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//To make enemies face the right direction
+            <string>if(global.pause) exit;
+
+//To make enemies face the right direction
 image_angle = direction;
 
 draw_self();

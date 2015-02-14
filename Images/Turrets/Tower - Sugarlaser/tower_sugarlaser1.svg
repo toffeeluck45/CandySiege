@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   viewBox="0 0 64.000001 64.000001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="tower_sugarlaser1.svg"
+   enable-background="new"
+   inkscape:export-filename="T:\CandySiege\Images\Turrets\Tower - Sugarlaser\tower_sugarlaser1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4486">
+      <feBlend
+         inkscape:collect="always"
+         mode="multiply"
+         in2="BackgroundImage"
+         id="feBlend4488" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4187">
+      <feBlend
+         inkscape:collect="always"
+         mode="multiply"
+         in2="BackgroundImage"
+         id="feBlend4189" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4191">
+      <feBlend
+         inkscape:collect="always"
+         mode="multiply"
+         in2="BackgroundImage"
+         id="feBlend4193" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.919596"
+     inkscape:cx="-10.532795"
+     inkscape:cy="27.705012"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     showgrid="false"
+     units="px"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Tower"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-988.36216)"
+     style="display:inline;filter:url(#filter4191)">
+    <rect
+       style="opacity:0.98999999;fill:#75ffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.09272289;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4142"
+       width="27.122559"
+       height="40.158272"
+       x="18.438721"
+       y="995.78674"
+       rx="8" />
+    <ellipse
+       style="opacity:0.98999999;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.96379375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4144"
+       cx="32"
+       cy="992.59875"
+       rx="3.3846521"
+       ry="3.2284026" />
+    <path
+       style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 40.800888,1035.9373 c 0.198353,-0.2609 3.347326,7.2687 11.1793,10.1818 4.798233,1.7847 -6.060915,5.5558 -19.974778,5.2049 -13.913862,0.4068 -24.8081253,-3.0829 -19.974777,-4.7702 5.243939,-1.8306 10.198178,-11.0311 10.509657,-11.0071 1.490699,0.7033 18.260598,0.3906 18.260598,0.3906 z"
+       id="path4148-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscscc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 18.214286,1017.7792 c 3.571429,11.0586 24.642857,-18.9185 27.5,-6.0714"
+       id="path4171"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Shadow - Tower"
+     style="display:inline;filter:url(#filter4486)">
+    <rect
+       style="opacity:0.5;fill:#757575;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.7104826;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4142-4"
+       width="20.615795"
+       height="39.673656"
+       x="19.452957"
+       y="7.7670097"
+       rx="6.0807815" />
+    <path
+       style="fill:#757575;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.39854252;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4191)"
+       d="m 36.866862,48.409716 c 0.146314,-0.1824 5.004567,10.195 11.008401,11.4057 2.20348,0.4443 -8.08054,2.2778 -18.343951,2.0324 -10.263411,0.2845 -18.358785,-2.4068 -17.387094,-2.7892 5.457463,-2.1477 9.976709,-9.8227 10.696293,-10.855 1.099598,0.4918 14.471647,0.2949 14.471647,0.2949 z"
+       id="path4148-0-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsccc"
+       transform="matrix(1.0065916,0,0,1.1411904,-1.4296677,-7.7706915)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Top Fin"
+     style="display:inline;opacity:1"
+     sodipodi:insensitive="true">
+    <rect
+       style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4152"
+       width="4.7748499"
+       height="35.584499"
+       x="29.612574"
+       y="19.080204"
+       rx="2.0104632"
+       ry="2.0570428" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Shadow - Top Fin"
+     style="display:inline;filter:url(#filter4187)">
+    <rect
+       style="opacity:1;fill:#757575;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.40997243;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4152-8"
+       width="1.4551662"
+       height="33.652203"
+       x="30.506721"
+       y="20.079832"
+       rx="0.36797225"
+       ry="1.9453421" />
+  </g>
+</svg>

@@ -64,7 +64,7 @@ coll_path = 0;
           <argument>
             <kind>1</kind>
             <string>if(!collision_rectangle(x-32,y-32,x+32,y+32,obj_marker,0,1))
-if(!collision_rectangle(x-32,y-32,x+32,y+32,obj_pipingTurret,0,1)) coll_path = 0;
+if(!collision_rectangle(x-16,y-16,x+16,y+16,obj_pipingTurret,0,1)) coll_path = 0;
 </string>
           </argument>
         </arguments>
@@ -282,7 +282,7 @@ scr_frosting();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>coll_path = 1;
+            <string>if(collision_rectangle(x-16,y-16,x+16,y+16,obj_pipingTurret,0,1)) coll_path = 1;
 </string>
           </argument>
         </arguments>

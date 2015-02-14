@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   viewBox="0 0 64.000001 64.000001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="button_upgrade.svg"
+   inkscape:export-filename="T:\CandySiege\Images\GUI\button_sell.png"
+   inkscape:export-xdpi="45.354332"
+   inkscape:export-ydpi="45.354332">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4182"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4184" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4186" />
+    </linearGradient>
+    <filter
+       inkscape:label="Torn Edges"
+       inkscape:menu="Distort"
+       inkscape:menu-tooltip="Displace the outside of shapes and pictures without altering their content"
+       height="1.4"
+       y="-0.2"
+       width="1.4"
+       x="-0.2"
+       style="color-interpolation-filters:sRGB;"
+       id="filter5638">
+      <feTurbulence
+         baseFrequency="0.05"
+         numOctaves="5"
+         type="fractalNoise"
+         result="result91"
+         id="feTurbulence5640" />
+      <feDisplacementMap
+         scale="25"
+         result="result5"
+         xChannelSelector="R"
+         in="SourceGraphic"
+         in2="result91"
+         id="feDisplacementMap5642" />
+      <feComposite
+         in="SourceGraphic"
+         operator="atop"
+         in2="result5"
+         id="feComposite5644" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#323232"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="58.862602"
+     inkscape:cy="42.838589"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Arrow"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-988.36216)">
+    <circle
+       style="fill:#00f5ff;fill-rule:evenodd;stroke:#000000;stroke-width:4.59777212;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       id="path3348"
+       cx="31.964285"
+       cy="1020.3979"
+       r="28.593964" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3350"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Rhum Banane';-inkscape-font-specification:'Rhum Banane';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(0,988.36216)"><flowRegion
+         id="flowRegion3352"><rect
+           id="rect3354"
+           width="35.892857"
+           height="40.17857"
+           x="15.178572"
+           y="14.714286"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Rhum Banane';-inkscape-font-specification:'Rhum Banane';fill:#000000" /></flowRegion><flowPara
+         id="flowPara3356">SSs</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3358"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Rhum Banane';-inkscape-font-specification:'Rhum Banane';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(0,988.36216)"><flowRegion
+         id="flowRegion3360"><rect
+           id="rect3362"
+           width="36.07143"
+           height="52.5"
+           x="16.607143"
+           y="8.1071424"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Rhum Banane';-inkscape-font-specification:'Rhum Banane';text-align:center;text-anchor:middle;fill:#000000" /></flowRegion><flowPara
+         id="flowPara3366">SVSSS</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Rhum Banane';-inkscape-font-specification:'Rhum Banane';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="32.142857"
+       y="1020.755"
+       id="text3370"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3372"
+         x="32.142857"
+         y="1020.755" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.02922821px;line-height:125%;font-family:'Rhum Banane';-inkscape-font-specification:'Rhum Banane, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f4e3d7;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="383.98788"
+       y="914.36365"
+       id="text3374"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.88440605,0.09114546,-0.35571848,1.0940426,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3378"
+         x="383.98788"
+         y="914.36365"
+         style="fill:#000000" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4201"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion4203"><rect
+           id="rect4205"
+           width="29.546963"
+           height="43.310291"
+           x="17.803938"
+           y="16.901638" /></flowRegion><flowPara
+         id="flowPara4207" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="37.123104"
+       y="1019.5322"
+       id="text5700"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5702"
+         x="37.123104"
+         y="1019.5322" /></text>
+    <path
+       style="fill:#ffff00;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 46.192777,1038.1654 c -3.977988,-6.8792 -4.294035,-8.5762 -9.464205,-19.9056 -1.825224,-4.2124 -0.640387,-4.3267 14.385444,-0.2645 -6.525007,-6.2574 -6.070749,-6.7389 -19.114016,-19.17326 -13.043262,12.43376 -12.589047,12.91526 -19.114019,19.17256 15.025855,-4.0622 16.210714,-3.9478 14.385408,0.2645 -5.170153,11.3294 -5.233652,13.0263 -9.211628,19.9055 5.308707,-2.1306 7.095576,-4.2641 14.066531,-5.2886 6.970905,1.0252 8.757754,3.1588 14.066485,5.2894 z"
+       id="path4170-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Shine" />
+</svg>
