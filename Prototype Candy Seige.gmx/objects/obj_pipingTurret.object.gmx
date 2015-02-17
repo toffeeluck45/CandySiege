@@ -41,6 +41,11 @@ level = 0;
 
 //GUI Status
 coll_path = 0;
+
+//Tower rotation
+rot = 0;
+rot_speed = 2;
+
 </string>
           </argument>
         </arguments>
@@ -346,7 +351,8 @@ if(active == 0){
     scr_grid();
 }
 else{
-    draw_self();
+    //draw_self();
+    draw_sprite_ext(spr_piping, 0, x, y, 1, 1, rot, -1, 1);
     draw_text(x, y, level);
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
