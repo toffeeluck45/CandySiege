@@ -33,6 +33,7 @@
     <sprites name="Tower Projectiles">
       <sprite>sprites\spr_jawbreaker</sprite>
       <sprite>sprites\spr_frosting</sprite>
+      <sprite>sprites\spr_flame</sprite>
     </sprites>
     <sprites name="Main Menu *">
       <sprite>sprites\spr_start1</sprite>
@@ -87,6 +88,7 @@
         <script>scripts\scr_laserbeam.gml</script>
         <script>scripts\scr_frosting.gml</script>
         <script>scripts\scr_jawbreakertest.gml</script>
+        <script>scripts\scr_flame.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -102,6 +104,7 @@
     <objects name="Tower Projectile">
       <object>objects\obj_jawbreaker</object>
       <object>objects\obj_frosting</object>
+      <object>objects\obj_flame</object>
     </objects>
     <objects name="Towers*">
       <object>objects\obj_pipingTurret</object>

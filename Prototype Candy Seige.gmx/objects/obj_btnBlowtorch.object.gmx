@@ -77,8 +77,10 @@ ii.active = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(position_meeting(mouse_x, mouse_y, obj_btnBlowtorch))
-    image_index = 1;
+            <string>if(position_meeting(mouse_x, mouse_y, obj_btnBlowtorch)){
+    image_index = 0;
+    draw_text(x, y, string(price));
+}
 else
     image_index = 0;
 

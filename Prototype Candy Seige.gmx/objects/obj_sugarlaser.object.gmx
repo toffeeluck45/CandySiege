@@ -197,9 +197,7 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var target_pos;
-
-scr_shoot();
+            <string>scr_shoot();
 </string>
           </argument>
         </arguments>
@@ -236,7 +234,6 @@ if(active == 0){
 }
 else{
     draw_self();
-    //draw_text(x, y, level);
     scr_laserbeam();
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
