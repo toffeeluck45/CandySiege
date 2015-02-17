@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="Button 1.svg"
-   inkscape:export-filename="C:\Users\Abi\Documents\CandySiege\Images\Main Menu\Button 2.png"
+   inkscape:export-filename="C:\Users\Abi\Documents\CandySiege\Images\Main Menu\Button 1.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -29,13 +29,13 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="99.765292"
+     inkscape:cx="-41.234708"
      inkscape:cy="90.157157"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:showpageshadow="false"
-     inkscape:window-width="674"
+     inkscape:window-width="685"
      inkscape:window-height="730"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -73,7 +73,7 @@
            height="57"
            x="43"
            y="-141.22835" /></flowRegion><flowPara
-         id="flowPara4192"></flowPara></flowRoot>    <flowRoot
+         id="flowPara4192" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4194"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -94,7 +94,7 @@
            height="103"
            x="63"
            y="-87.228348" /></flowRegion><flowPara
-         id="flowPara4208"></flowPara></flowRoot>    <flowRoot
+         id="flowPara4208" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4214"
        style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
@@ -104,7 +104,7 @@
            height="43"
            x="23"
            y="-150.22835" /></flowRegion><flowPara
-         id="flowPara4220"></flowPara></flowRoot>    <text
+         id="flowPara4220" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="97"
@@ -114,7 +114,7 @@
          sodipodi:role="line"
          id="tspan4224"
          x="97"
-         y="692.36218"></tspan></text>
+         y="692.36218" /></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.15786457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 29.051913,946.47191 c -4.572843,2.76515 52.916439,7.47586 3.088781,69.95909 55.246351,14.3012 108.065636,10.4911 159.386126,-4.5032 -19.40257,-21.96416 -30.16623,-51.5483 0.0471,-68.98508"
