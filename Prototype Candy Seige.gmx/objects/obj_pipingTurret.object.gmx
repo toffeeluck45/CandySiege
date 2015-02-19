@@ -42,10 +42,6 @@ level = 0;
 //GUI Status
 coll_path = 0;
 
-//Tower rotation
-rot = 0;
-rot_speed = 2;
-
 </string>
           </argument>
         </arguments>
@@ -182,9 +178,9 @@ if(!collision_rectangle(x-16,y-16,x+16,y+16,obj_pipingTurret,0,1)) coll_path = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = 225;
-if(mouse_check_button_pressed(mb_right))
-    instance_destroy();
+            <string>image_angle = 0;
+
+if(mouse_check_button_pressed(mb_right)) instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -233,15 +229,7 @@ if(mouse_check_button_pressed(mb_right))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var target_pos;
-
-//Point towards enemy
-if(!instance_exists(target)) target = noone;
-if(target != noone){
-    image_angle = point_direction(x, y, target.x, target.y);
-}
-
-scr_frosting();
+            <string>scr_jawbreakertest();
 </string>
           </argument>
         </arguments>
@@ -346,13 +334,18 @@ if(active == 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(active == 0){
+            <string>//Point towards enemy
+if(!instance_exists(target)) target = noone;
+if(target != noone){
+    image_angle = point_direction(x, y, target.x, target.y);
+}
+
+if(active == 0){
     scr_towerGhost();
     scr_grid();
 }
 else{
-    //draw_self();
-    draw_sprite_ext(spr_piping, 0, x, y, 1, 1, rot, -1, 1);
+    draw_self();
     draw_text(x, y, level);
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }

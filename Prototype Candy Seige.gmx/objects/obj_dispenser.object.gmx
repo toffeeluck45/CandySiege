@@ -131,26 +131,6 @@ price = 15;
       </action>
       <action>
         <libid>1</libid>
-        <id>408</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>mouse_check_button_pressed(mb_right)</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -165,7 +145,10 @@ price = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>image_angle = 90;
+
+//Deselect by right-click
+if(mouse_check_button_pressed(mb_right)) instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -214,13 +197,7 @@ price = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Point towards enemy
-if(!instance_exists(target)) target = noone;
-if(target != noone){
-    image_angle = point_direction(x, y, target.x, target.y) - 90;
-}
-
-scr_jawbreakertest();
+            <string>scr_jawbreaker();
 </string>
           </argument>
         </arguments>
@@ -243,13 +220,20 @@ scr_jawbreakertest();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(active == 0){
+            <string>image_index = level;
+
+//Point towards enemy
+if(!instance_exists(target)) target = noone;
+if(target != noone){
+    image_angle = point_direction(x, y, target.x, target.y);
+}
+
+if(active == 0){
     scr_towerGhost();
     scr_grid();
 }
 else{
     draw_self();
-    draw_text(x, y, level);
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
 </string>

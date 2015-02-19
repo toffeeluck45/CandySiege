@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10000</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,32 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
-
-price = 10;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_index = 0;
+            <string>price = 10;
 </string>
           </argument>
         </arguments>
@@ -83,29 +58,6 @@ ii.active = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="3">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_index = 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -123,7 +75,12 @@ ii.active = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(btn_sugarlaser, image_index, x, y);
+            <string>if(position_meeting(mouse_x, mouse_y, self))
+    image_index = 1;
+else
+    image_index = 0;
+
+draw_self();
 
 if(image_index = 1) draw_text(x, y, string(price));
 </string>

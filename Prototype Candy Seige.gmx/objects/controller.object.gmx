@@ -11,6 +11,46 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>initGUI</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -38,6 +78,14 @@ countdown = 600;
 
 ii_select = noone;
 almost = 0;
+
+//GUI position
+left = 0;
+top = 0;
+width = 0;
+height = 0;
+myParent = noone;
+
 </string>
           </argument>
         </arguments>
@@ -60,9 +108,7 @@ almost = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.pause) exit;
-
-//Check whether the tower should be deselected
+            <string>//Check whether the tower should be deselected
 scr_towerDeselect();
 
 //Wave system
@@ -106,8 +152,8 @@ if(lives == 0){
           <argument>
             <kind>1</kind>
             <string>//HUD
-draw_sprite(spr_scoreboard, 0, 0, 512);
-draw_sprite(spr_towerSlots, 0, 335, 550);
+//draw_sprite(spr_statBoard, 0, 0, 512);
+draw_sprite(spr_towerSlots, 0, gui_width, gui_height);
 draw_sprite(spr_tempScoreBoard, 0, 0, 0);
 
 //Tower Stats HUD

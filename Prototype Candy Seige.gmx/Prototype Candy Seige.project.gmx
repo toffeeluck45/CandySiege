@@ -36,47 +36,48 @@
       <sprite>sprites\spr_flame</sprite>
     </sprites>
     <sprites name="Main Menu *">
-      <sprite>sprites\spr_start1</sprite>
-      <sprite>sprites\spr_start2</sprite>
-      <sprite>sprites\spr_options1</sprite>
-      <sprite>sprites\spr_options2</sprite>
-      <sprite>sprites\spr_quit1</sprite>
-      <sprite>sprites\spr_quit2</sprite>
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_options</sprite>
+      <sprite>sprites\spr_quit</sprite>
       <sprite>sprites\spr_setFS</sprite>
       <sprite>sprites\spr_main</sprite>
     </sprites>
     <sprites name="GUI - Towers">
-      <sprite>sprites\btn_piping1</sprite>
+      <sprite>sprites\btn_piping</sprite>
       <sprite>sprites\btn_piping2</sprite>
-      <sprite>sprites\btn_gumball1</sprite>
-      <sprite>sprites\btn_gumball2</sprite>
+      <sprite>sprites\btn_gumball</sprite>
       <sprite>sprites\btn_sugarlaser</sprite>
       <sprite>sprites\btn_blowtorch</sprite>
     </sprites>
     <sprites name="GUI - Interface">
       <sprite>sprites\spr_marker</sprite>
       <sprite>sprites\spr_tempScoreBoard</sprite>
-      <sprite>sprites\spr_scoreboard</sprite>
+      <sprite>sprites\spr_statBoard</sprite>
       <sprite>sprites\spr_towerSlots</sprite>
       <sprite>sprites\spr_sell</sprite>
       <sprite>sprites\spr_upgrade</sprite>
       <sprite>sprites\spr_up</sprite>
+      <sprite>sprites\btn_idle</sprite>
       <sprite>sprites\Marshy</sprite>
     </sprites>
+    <sprite>sprites\spr_test</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_end</background>
     <background>background\bg_mainmenu</background>
+    <background>background\bg_end</background>
     <background>background\bg_lvl1</background>
+    <background>background\bg_lvl2</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_lvl1</path>
+    <path>paths\path_lvl2</path>
   </paths>
   <scripts name="scripts">
     <scripts name="Interface">
       <script>scripts\scr_grid.gml</script>
       <script>scripts\scr_menu.gml</script>
       <script>scripts\scr_wave.gml</script>
+      <script>scripts\initGUI.gml</script>
     </scripts>
     <scripts name="Towers">
       <script>scripts\scr_towerDeselect.gml</script>
@@ -92,6 +93,9 @@
       </scripts>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_lives</font>
+  </fonts>
   <objects name="objects">
     <objects name="Menu *">
       <object>objects\obj_start</object>
@@ -118,24 +122,36 @@
     <objects name="GUI">
       <object>objects\controller</object>
       <object>objects\obj_pause</object>
-      <object>objects\obj_bgmController</object>
       <object>objects\obj_gameover</object>
-      <object>objects\obj_btnSugarlaser</object>
-      <object>objects\obj_btnPiping</object>
-      <object>objects\obj_btnGumball</object>
-      <object>objects\obj_btnBlowtorch</object>
+      <object>objects\obj_bgmController</object>
+      <object>objects\obj_GUIManager</object>
       <object>objects\obj_marker</object>
-      <object>objects\obj_sell</object>
-      <object>objects\obj_upgrade</object>
+      <objects name="TowerSlots">
+        <object>objects\obj_btnPiping</object>
+        <object>objects\obj_btnSugarlaser</object>
+        <object>objects\obj_btnGumball</object>
+        <object>objects\obj_btnBlowtorch</object>
+        <object>objects\obj_sell</object>
+        <object>objects\obj_upgrade</object>
+      </objects>
+      <objects name="Status Board">
+        <object>objects\obj_statBoard</object>
+      </objects>
     </objects>
     <object>objects\obj_wave</object>
+    <object>objects\obj_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_end</room>
     <room>rooms\rm_lvl1</room>
+    <room>rooms\rm_lvl2</room>
   </rooms>
+  <constants number="2">
+    <constant name="gui_width">800</constant>
+    <constant name="gui_height">600</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

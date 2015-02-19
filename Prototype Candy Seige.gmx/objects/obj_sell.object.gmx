@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10000</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="3" enumb="0">
@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select = noone) visible = 0;
+            <string>if(controller.ii_select == noone){
+    visible = 0;
+    draw_sprite(btn_idle, 0, x, y);
+}
 else visible = 1;
 </string>
           </argument>
@@ -49,7 +52,7 @@ else visible = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(visible = 1){
+            <string>if(visible == 1){
     var ii;
     ii = controller.ii_select;
     controller.money += floor(ii.price/2);
@@ -78,7 +81,13 @@ else visible = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(position_meeting(mouse_x, mouse_y, self))
+            <string>if(visible == 0){
+    image_index = 2;
+    draw_self();
+    exit;
+}
+
+if(position_meeting(mouse_x, mouse_y, self))
     image_index = 1;
 else
     image_index = 0;

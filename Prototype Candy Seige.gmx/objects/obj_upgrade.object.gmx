@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10000</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="3" enumb="0">
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select = noone) visible = 0;
+            <string>if(controller.ii_select == noone) visible = 0;
 else {
     visible = 1;
     if(controller.ii_select.level &lt; 5) price = floor(controller.ii_select.price*0.4);
@@ -95,6 +95,7 @@ else
     sprite_index = spr_upgrade;
 
 image_speed = 0.33;
+
 draw_self();
 </string>
           </argument>
