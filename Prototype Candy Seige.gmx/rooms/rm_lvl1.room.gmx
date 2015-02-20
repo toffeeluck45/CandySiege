@@ -3,15 +3,15 @@
   <caption></caption>
   <width>800</width>
   <height>600</height>
-  <vsnap>16</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>15</vsnap>
+  <hsnap>37</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
   <colour>32768</colour>
   <showcolour>-1</showcolour>
   <code></code>
-  <enableViews>0</enableViews>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="800" hview="600" xport="0" yport="0" wport="800" hport="600" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -54,12 +54,12 @@
     <instance objName="obj_marker" x="256" y="576" name="inst_AE904826" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="224" y="544" name="inst_A028CABE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controller" x="0" y="32" name="inst_7707DEDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="448" y="576" name="inst_E850D0E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="512" y="576" name="inst_E850D0E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="128" y="544" name="inst_2F538E89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="480" y="576" name="inst_C3F279B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="0" y="576" name="inst_56210CA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="544" y="580" name="inst_2FE88E15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_btnSugarlaser" x="416" y="560" name="inst_AFB6F5B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btnSugarlaser" x="502" y="573" name="inst_AFB6F5B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="224" y="576" name="inst_2C29CB38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="192" y="576" name="inst_923000F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="160" y="32" name="inst_98503982" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -78,7 +78,7 @@
     <instance objName="obj_marker" x="512" y="544" name="inst_18BF711B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="224" y="512" name="inst_005C803F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="640" y="576" name="inst_D3D11A64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="672" y="576" name="inst_2C20BF8A" locked="0" code="" scaleX="0.100000001490116" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="675" y="575" name="inst_DCB35F79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="416" y="576" name="inst_EF260AAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="32" y="576" name="inst_33ECA49D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="416" y="544" name="inst_44125A64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -86,19 +86,19 @@
     <instance objName="obj_marker" x="64" y="0" name="inst_0DFE4FAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="288" y="512" name="inst_30FE2DEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="96" y="32" name="inst_AAAE6B82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_upgrade" x="736" y="560" name="inst_51A1FC6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="736" y="576" name="inst_23E24592" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="480" y="544" name="inst_65FC27AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_btnPiping" x="352" y="560" name="inst_C76E5267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_upgrade" x="765" y="573" name="inst_51A1FC6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="740" y="580" name="inst_23E24592" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="480" y="545" name="inst_65FC27AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btnPiping" x="437" y="572" name="inst_C76E5267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="64" y="32" name="inst_C4DDDC52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_btnGumball" x="480" y="560" name="inst_76DF2DF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btnGumball" x="371" y="572" name="inst_76DF2DF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="32" y="0" name="inst_0AE85105" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="736" y="544" name="inst_5EC2B15B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="96" y="0" name="inst_51C79D51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="0" y="0" name="inst_7941F94C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sell" x="672" y="560" name="inst_C1C18617" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sell" x="699" y="573" name="inst_C1C18617" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="0" y="544" name="inst_E7D2051B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="352" y="576" name="inst_3FB485D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="448" y="576" name="inst_3FB485D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="256" y="512" name="inst_A795C26B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="192" y="512" name="inst_BF667C88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="96" y="512" name="inst_B2DB8BC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -107,12 +107,11 @@
     <instance objName="obj_marker" x="256" y="544" name="inst_FE3CEC56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="32" y="512" name="inst_3E5E9246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="288" y="544" name="inst_E6DDC9D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="672" y="576" name="inst_068F96C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="160" y="512" name="inst_7C567FE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="384" y="544" name="inst_D1C4A2D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="96" y="544" name="inst_D94F2F63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="768" y="544" name="inst_75B10BEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="512" y="576" name="inst_9A56FC50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="768" y="545" name="inst_75B10BEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="352" y="576" name="inst_9A56FC50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="288" y="576" name="inst_450DB4D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="32" y="32" name="inst_B8BB9EB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="128" y="32" name="inst_EEEE38A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -125,7 +124,7 @@
     <instance objName="obj_marker" x="160" y="0" name="inst_DB71D084" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="704" y="576" name="inst_0A4FD5A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="128" y="576" name="inst_8694FCE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="544" y="544" name="inst_EEE455A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="545" y="545" name="inst_EEE455A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="320" y="544" name="inst_FB97AA50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="64" y="512" name="inst_AFD5F1AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="160" y="576" name="inst_6570087A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -252,7 +251,7 @@
     <instance objName="obj_marker" x="320" y="440" name="inst_26744584" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="352" y="440" name="inst_B1B76C79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="384" y="440" name="inst_DC9AE929" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_btnBlowtorch" x="544" y="560" name="inst_E3EC8F44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btnBlowtorch" x="568" y="573" name="inst_E3EC8F44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="704" y="460" name="inst_DAA7535F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="672" y="460" name="inst_86D4457A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="640" y="460" name="inst_E25132E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -305,6 +304,7 @@
     <instance objName="obj_marker" x="320" y="420" name="inst_596B1B7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="256" y="300" name="inst_AF634C96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="192" y="32" name="inst_B74C6510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_statBoard" x="222" y="30" name="inst_3FC280D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="288" y="256" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_7988F2C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

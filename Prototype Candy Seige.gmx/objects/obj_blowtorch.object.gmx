@@ -226,6 +226,13 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
             <kind>1</kind>
             <string>image_index = level;
 
+//Point towards enemy
+if(!instance_exists(target)) target = noone;
+if(target != noone){
+    image_angle = point_direction(x, y, target.x, target.y) - 90;
+}
+
+//Active or Inactive
 if(active == 0){
     scr_towerGhost();
     scr_grid();

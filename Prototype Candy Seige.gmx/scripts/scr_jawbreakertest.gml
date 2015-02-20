@@ -15,7 +15,7 @@ if(instance_exists(obj_enemy)){
     else if(firing = 0){
         firing = 1;
         //Create a bullet
-        ii = instance_create(x + lengthdir_x(length, image_angle), y + lengthdir_y(length, image_angle), obj_jawbreaker);
+        ii = instance_create(x + lengthdir_x(length, image_angle), y + lengthdir_y(length, image_angle), obj_frosting);
         audio_play_sound(sfx_frosting, 60, 0);
         dist = point_distance(x,y,target.x,target.y)/24;
         xx = target.x+target.path_speed*dist*cos(target.direction*pi/180);
