@@ -29,10 +29,11 @@
 
 //Tower Stats
 name = "Blowtorch"
-damage = 2;
+damage = 5;
 range = 100;
 rate = 30;
 price = 10;
+flame = 0;
 
 //Tower Angle
 image_angle = 90;
@@ -202,7 +203,13 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if(!instance_exists(myChild)){
+    if(image_angle == 0) scr_flame(x+55, y);
+    if(image_angle == 90) scr_flame(x, y-55);
+    if(image_angle == 180) scr_flame(x-55, y)
+    if(image_angle == 270) scr_flame(x, y+55);
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -238,15 +245,13 @@ if(active == 0){
     scr_grid();
 }
 else{
-    draw_self();
-
-    if(image_angle == 0) scr_flame(x+55, y);
-    if(image_angle == 90) scr_flame(x, y-55);
-    else if(image_angle == 180) scr_flame(x-55, y)
-    else if(image_angle == 270) scr_flame(x, y+55);
-    
+    draw_self();   
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
+
+//Selected Halo
+if(selected == 1)
+    draw_sprite(spr_selected, 0, x, y);
 </string>
           </argument>
         </arguments>

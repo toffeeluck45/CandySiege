@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>var ii;
 if (instance_position(mouse_x, mouse_y, obj_sugarlaser)) exit;
-if (controller.money &lt; price) exit;
+if (global.money &lt; price) exit;
 ii = instance_create(x, y, obj_sugarlaser);
 ii.active = 0;
 </string>

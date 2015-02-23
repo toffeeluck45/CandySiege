@@ -28,11 +28,14 @@
             <string>event_inherited();
 
 //Tower Stats
-name = "Jawbreaker"
+name = "Gumball Dispenser"
 damage = 25;
 range = 150;
 rate = 30;
 price = 15;
+
+//Bullet colot
+color = 0;
 </string>
           </argument>
         </arguments>
@@ -236,6 +239,10 @@ else{
     draw_self();
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
+
+//Selected Halo
+if(selected == 1)
+    draw_sprite(spr_selected, 0, x, y);
 </string>
           </argument>
         </arguments>

@@ -25,11 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select == noone){
-    visible = 0;
-    draw_sprite(btn_idle, 0, x, y);
-}
-else visible = 1;
+            <string>if(controller.ii_select == noone) draw_sprite(btn_idle, 0, x, y);
 </string>
           </argument>
         </arguments>
@@ -52,10 +48,11 @@ else visible = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(visible == 1){
+            <string>if(controller.ii_select != noone){
+    audio_play_sound(sfx_sell, 50, 0);
     var ii;
     ii = controller.ii_select;
-    controller.money += floor(ii.price/2);
+    global.money += floor(ii.price/2);
     with(ii) instance_destroy();
     controller.ii_select = noone;
 }
@@ -81,9 +78,8 @@ else visible = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(visible == 0){
-    image_index = 2;
-    draw_self();
+            <string>if(controller.ii_select == noone){
+    draw_sprite(btn_idle, 0, x, y);
     exit;
 }
 

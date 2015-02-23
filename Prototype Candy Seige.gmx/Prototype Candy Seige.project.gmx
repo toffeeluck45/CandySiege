@@ -16,6 +16,10 @@
       <sound>sound\sfx_gumball</sound>
       <sound>sound\sfx_sugarlaser</sound>
       <sound>sound\sfx_almost</sound>
+      <sound>sound\sfx_waveTimer</sound>
+      <sound>sound\sfx_towerPlace</sound>
+      <sound>sound\sfx_sell</sound>
+      <sound>sound\sfx_upgrade</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -40,30 +44,36 @@
       <sprite>sprites\spr_options</sprite>
       <sprite>sprites\spr_quit</sprite>
       <sprite>sprites\spr_setFS</sprite>
-      <sprite>sprites\spr_main</sprite>
-    </sprites>
-    <sprites name="GUI - Towers">
-      <sprite>sprites\btn_piping</sprite>
-      <sprite>sprites\btn_piping2</sprite>
-      <sprite>sprites\btn_gumball</sprite>
-      <sprite>sprites\btn_sugarlaser</sprite>
-      <sprite>sprites\btn_blowtorch</sprite>
+      <sprite>sprites\spr_optionsBack</sprite>
     </sprites>
     <sprites name="GUI - Interface">
       <sprite>sprites\spr_marker</sprite>
       <sprite>sprites\spr_tempScoreBoard</sprite>
-      <sprite>sprites\spr_statBoard</sprite>
-      <sprite>sprites\spr_towerSlots</sprite>
-      <sprite>sprites\spr_sell</sprite>
-      <sprite>sprites\spr_upgrade</sprite>
-      <sprite>sprites\spr_up</sprite>
-      <sprite>sprites\btn_idle</sprite>
       <sprite>sprites\Marshy</sprite>
+      <sprites name="Tower Slots">
+        <sprite>sprites\spr_towerSlots</sprite>
+        <sprite>sprites\btn_idle</sprite>
+        <sprite>sprites\spr_upgrade</sprite>
+        <sprite>sprites\spr_up</sprite>
+        <sprite>sprites\spr_sell</sprite>
+        <sprites name="GUI - Towers">
+          <sprite>sprites\btn_piping</sprite>
+          <sprite>sprites\btn_gumball</sprite>
+          <sprite>sprites\btn_sugarlaser</sprite>
+          <sprite>sprites\btn_blowtorch</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Status Board">
+        <sprite>sprites\spr_statBoard</sprite>
+        <sprite>sprites\spr_livesBox</sprite>
+      </sprites>
+      <sprite>sprites\spr_selected</sprite>
     </sprites>
     <sprite>sprites\spr_test</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_mainmenu</background>
+    <background>background\bg_mainMenu</background>
+    <background>background\bg_optionsMenu</background>
     <background>background\bg_end</background>
     <background>background\bg_lvl1</background>
     <background>background\bg_lvl2</background>
@@ -95,6 +105,8 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_lives</font>
+    <font>fonts\fnt_stats</font>
+    <font>fonts\fnt_wave</font>
   </fonts>
   <objects name="objects">
     <objects name="Menu *">
@@ -136,6 +148,7 @@
       </objects>
       <objects name="Status Board">
         <object>objects\obj_statBoard</object>
+        <object>objects\obj_livesBox</object>
       </objects>
     </objects>
     <object>objects\obj_wave</object>

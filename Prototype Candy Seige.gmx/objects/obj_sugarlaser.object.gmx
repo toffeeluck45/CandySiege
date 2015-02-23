@@ -237,6 +237,10 @@ else{
     scr_laserbeam();
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
+
+//Selected Halo
+if(selected == 1)
+    draw_sprite(spr_selected, 0, x, y);
 </string>
           </argument>
         </arguments>

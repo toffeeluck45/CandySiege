@@ -229,7 +229,7 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_jawbreakertest();
+            <string>scr_frosting();
 </string>
           </argument>
         </arguments>
@@ -309,7 +309,8 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
 if(active == 0){
     if (coll_path = 0){
         active = 1;
-        controller.money -= price;
+        global.money -= price;
+        audio_play_sound(sfx_towerPlace, 60, 0);
     }
 }
 </string>
@@ -334,7 +335,9 @@ if(active == 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Point towards enemy
+            <string>image_index = level;
+
+//Point towards enemy
 if(!instance_exists(target)) target = noone;
 if(target != noone){
     image_angle = point_direction(x, y, target.x, target.y);
@@ -346,9 +349,12 @@ if(active == 0){
 }
 else{
     draw_self();
-    draw_text(x, y, level);
     if(position_meeting(mouse_x, mouse_y, self)) scr_towerRange();
 }
+
+//Selected Halo
+if(selected == 1)
+    draw_sprite(spr_selected, 0, x, y);
 </string>
           </argument>
         </arguments>

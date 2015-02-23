@@ -21,5 +21,8 @@ if instance_exists(obj_enemy){
         ii.speed = 12;
         ii.direction = point_direction(x,y,xx,yy);
         ii.damage = damage;
+        ii.color = color;
+        if(color == 4) color = 0;
+        else color += 1;
     }
 }

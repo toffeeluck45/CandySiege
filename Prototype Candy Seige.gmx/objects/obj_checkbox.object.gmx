@@ -52,10 +52,14 @@ checked = 0;
             <string>if(checked == 0){
     checked = 1;
     window_set_fullscreen(true);
+    view_hport = 728;
+    view_wport = 1024;
 }
 else{
     checked = 0;
     window_set_fullscreen(false);
+    view_hport = 600;
+    view_wport = 800;
 }
 </string>
           </argument>

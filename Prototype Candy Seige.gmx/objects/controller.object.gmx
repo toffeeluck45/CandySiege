@@ -66,15 +66,16 @@
           <argument>
             <kind>1</kind>
             <string>//Global elements
-money = 30;
+global.money = 30;
 lives = 5;
 score = 0;
 
 //Wave Timers
-wave = 0;
-wave_time = 0;
-wave_enemies = 0;
-countdown = 600;
+wave = 1;
+waveTime = 0;
+waveEnemies = 0;
+countdown = 400;
+spawnTime = -1;
 
 ii_select = noone;
 almost = 0;
@@ -134,6 +135,38 @@ if(lives == 0){
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(waveTime &gt; 0){
+    draw_set_font(fnt_wave);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_color(c_black);
+    draw_text(view_wport*0.5 + 3, view_hport*0.5 + 2, "Wave " + string(wave));
+    draw_set_color(c_lime);
+    draw_text(view_wport*0.5, view_hport*0.5, "Wave " + string(wave));
+    draw_set_color(c_black);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -152,29 +185,17 @@ if(lives == 0){
           <argument>
             <kind>1</kind>
             <string>//HUD
-//draw_sprite(spr_statBoard, 0, 0, 512);
 draw_sprite(spr_towerSlots, 0, gui_width, gui_height);
 draw_sprite(spr_tempScoreBoard, 0, 0, 0);
 
-//Tower Stats HUD
-draw_set_halign(fa_left);
-draw_set_valign(fa_left);
-draw_text(94, 527, 'Score: ' + string(score) + '#Magic Sugar: ' + string(money));
-
-//Selected Tower Stats
-if(ii_select != noone){
-    draw_text(94, 560, 'Damage: ' + string(ii_select.damage) + ' HP');
-}
-
-//Tower Stats
-if(ii_select != noone){
-    draw_text(94,575,'Upgrade Price: ' + string(ii_select.price*0.4));
-}
+draw_set_font(-1);
 
 //Score, Lives and Wave Time
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
-draw_text(20, 13, 'Lives: ' + string(lives) + '#Firing: ' + string(ii_select.firing) + '#Next Wave in: ' + string(countdown));
+draw_text(20, 13, 'Wave Time: ' + string(waveTime) + '#Next Wave in: ' + string(countdown) + '#Spawn Time: ' + string(spawnTime));
+
+//'#Firing: ' + string(ii_select.firing) +
 </string>
           </argument>
         </arguments>
@@ -197,12 +218,12 @@ draw_text(20, 13, 'Lives: ' + string(lives) + '#Firing: ' + string(ii_select.fir
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(wave_enemies = 0 &amp;&amp; !instance_exists(obj_enemy)){
+            <string>if(waveEnemies = 0 &amp;&amp; !instance_exists(obj_enemy)){
     wave += 1;
-    wave_time = 0;
-    wave_enemies = min(5+floor(wave*0.4),16);
-    ee = wave_enemies;
-    countdown = 600;
+    waveTime = -1;
+    spawnTime = 0;
+    waveEnemies = min(5+floor(wave*0.4),16);
+    ee = waveEnemies;
 }
 </string>
           </argument>

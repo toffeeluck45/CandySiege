@@ -31,6 +31,8 @@ top = 0;
 left = 0;
 
 myParent = noone;
+
+ii_select = noone;
 </string>
           </argument>
         </arguments>
