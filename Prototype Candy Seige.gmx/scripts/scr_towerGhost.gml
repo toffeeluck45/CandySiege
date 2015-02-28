@@ -2,7 +2,7 @@
 draw_set_alpha(0.5);
 
 //Color indicator
-if(coll_path = 0) draw_set_color(c_lime);
+if(coll_path == 0) draw_set_color(c_lime);
 else draw_set_color(c_red);
 
 //Tower Ghost

@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>obj_GUIManager</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if(lives &lt;= 0)
+    persistent = false;
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,7 +49,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>width = 325 * global.scale_factor;
+            <string>if(!instance_exists(controller)) exit;
+
+width = 325 * global.scale_factor;
 height = 88 * global.scale_factor;
 left = 0;
 top = view_hport*0.8533333333;

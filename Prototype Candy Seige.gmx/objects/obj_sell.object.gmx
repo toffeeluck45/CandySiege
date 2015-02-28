@@ -3,9 +3,9 @@
   <spriteName>spr_sell</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10000</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="3" enumb="0">
@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select != noone){
+            <string>if(controller.canBuild == 1) exit;
+
+if(controller.ii_select != noone){
     audio_play_sound(sfx_sell, 50, 0);
     var ii;
     ii = controller.ii_select;
@@ -61,7 +63,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -78,7 +80,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select == noone){
+            <string>if(controller.canBuild == 1) exit;
+
+if(controller.ii_select == noone){
     draw_sprite(btn_idle, 0, x, y);
     exit;
 }

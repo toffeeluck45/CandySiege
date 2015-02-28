@@ -33,6 +33,7 @@
     <sprites name="Enemy">
       <sprite>sprites\spr_ant</sprite>
       <sprite>sprites\spr_deathAnt</sprite>
+      <sprite>sprites\spr_queenAnt</sprite>
     </sprites>
     <sprites name="Tower Projectiles">
       <sprite>sprites\spr_jawbreaker</sprite>
@@ -49,9 +50,11 @@
     <sprites name="GUI - Interface">
       <sprite>sprites\spr_marker</sprite>
       <sprite>sprites\spr_tempScoreBoard</sprite>
+      <sprite>sprites\spr_selected</sprite>
       <sprite>sprites\Marshy</sprite>
       <sprites name="Tower Slots">
         <sprite>sprites\spr_towerSlots</sprite>
+        <sprite>sprites\spr_pricetag</sprite>
         <sprite>sprites\btn_idle</sprite>
         <sprite>sprites\spr_upgrade</sprite>
         <sprite>sprites\spr_up</sprite>
@@ -67,9 +70,14 @@
         <sprite>sprites\spr_statBoard</sprite>
         <sprite>sprites\spr_livesBox</sprite>
       </sprites>
-      <sprite>sprites\spr_selected</sprite>
+      <sprites name="Information Board">
+        <sprite>sprites\spr_infoBoard</sprite>
+        <sprite>sprites\spr_descBox</sprite>
+        <sprite>sprites\btn_ok</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_test</sprite>
+    <sprite>sprites\spr_story</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mainMenu</background>
@@ -77,6 +85,7 @@
     <background>background\bg_end</background>
     <background>background\bg_lvl1</background>
     <background>background\bg_lvl2</background>
+    <background>background\bg_levelComplete</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_lvl1</path>
@@ -87,6 +96,7 @@
       <script>scripts\scr_grid.gml</script>
       <script>scripts\scr_menu.gml</script>
       <script>scripts\scr_wave.gml</script>
+      <script>scripts\scr_instructionCheck.gml</script>
       <script>scripts\initGUI.gml</script>
     </scripts>
     <scripts name="Towers">
@@ -98,15 +108,16 @@
         <script>scripts\scr_jawbreaker.gml</script>
         <script>scripts\scr_laserbeam.gml</script>
         <script>scripts\scr_frosting.gml</script>
-        <script>scripts\scr_jawbreakertest.gml</script>
         <script>scripts\scr_flame.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_enemyGen.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_lives</font>
     <font>fonts\fnt_stats</font>
     <font>fonts\fnt_wave</font>
+    <font>fonts\fnt_description</font>
   </fonts>
   <objects name="objects">
     <objects name="Menu *">
@@ -117,6 +128,9 @@
       <object>objects\obj_checkbox</object>
       <object>objects\obj_main</object>
     </objects>
+    <objects name="Story">
+      <object>objects\obj_story1</object>
+    </objects>
     <objects name="Tower Projectile">
       <object>objects\obj_jawbreaker</object>
       <object>objects\obj_frosting</object>
@@ -125,11 +139,12 @@
     <objects name="Towers*">
       <object>objects\obj_pipingTurret</object>
       <object>objects\obj_dispenser</object>
-      <object>objects\obj_blowtorch</object>
       <object>objects\obj_sugarlaser</object>
+      <object>objects\obj_blowtorch</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_enemy</object>
+      <object>objects\obj_queenAnt</object>
     </objects>
     <objects name="GUI">
       <object>objects\controller</object>
@@ -139,16 +154,23 @@
       <object>objects\obj_GUIManager</object>
       <object>objects\obj_marker</object>
       <objects name="TowerSlots">
+        <object>objects\obj_towerSlots</object>
+        <object>objects\obj_btnGumball</object>
         <object>objects\obj_btnPiping</object>
         <object>objects\obj_btnSugarlaser</object>
-        <object>objects\obj_btnGumball</object>
         <object>objects\obj_btnBlowtorch</object>
+        <object>objects\obj_prototypeButton</object>
         <object>objects\obj_sell</object>
         <object>objects\obj_upgrade</object>
       </objects>
       <objects name="Status Board">
         <object>objects\obj_statBoard</object>
         <object>objects\obj_livesBox</object>
+      </objects>
+      <objects name="Information Board">
+        <object>objects\obj_infoBoard</object>
+        <object>objects\obj_descBox</object>
+        <object>objects\obj_okButton</object>
       </objects>
     </objects>
     <object>objects\obj_wave</object>
@@ -158,6 +180,7 @@
     <room>rooms\rm_mainmenu</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_end</room>
+    <room>rooms\rm_story</room>
     <room>rooms\rm_lvl1</room>
     <room>rooms\rm_lvl2</room>
   </rooms>

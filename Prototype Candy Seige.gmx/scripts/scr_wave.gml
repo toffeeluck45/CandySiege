@@ -5,17 +5,21 @@ if(!audio_is_playing(sfx_waveTimer))
 
 //Wave Start
 if(!instance_exists(obj_enemy)){
-    if(waveTime == 400){
+    if(waveTime == 400 && wave < 11){
         spawnTime = 0;
         waveEnemies = min(5+floor(wave*0.4), 16);
         ee = waveEnemies;
         waveTime = -1
     }
+    else if(waveTime == 400){
+        spawnTime = 0;
+        waveEnemies = 1;
+        ee = 1;
+        waveTime = -1
+    }
+    
     if(spawnTime == 600 || (waveTime < 0 && spawnTime > 15 && waveEnemies == 0)){
-        wave += 1;
-        waveTime = 0;
-        countdown = 400;
-        spawnTime = -1;
+        scr_instructionCheck();
     }
 }
 
@@ -31,7 +35,11 @@ if(spawnTime >= 0 && spawnTime < 600)
 //Creating enemies
 if(waveEnemies > 0){
     if (spawnTime == (ee-waveEnemies)*30+15){
-        instance_create(-32,0,obj_enemy);
+        //scr_enemyGen(wave);
+        if(wave < 4){
+            with(instance_create(-32,0,obj_enemy)) path_start(path_lvl1, 2, 0, 1);
+        }
+        else instance_create(-32, 0, obj_queenAnt);
         waveEnemies -= 1;
-    }   
+    }
 }

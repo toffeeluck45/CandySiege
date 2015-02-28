@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-1000</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -67,6 +67,7 @@
             <kind>1</kind>
             <string>//Global elements
 global.money = 30;
+global.level = 1;
 lives = 5;
 score = 0;
 
@@ -74,10 +75,11 @@ score = 0;
 wave = 1;
 waveTime = 0;
 waveEnemies = 0;
-countdown = 400;
+countdown = 450;
 spawnTime = -1;
 
 ii_select = noone;
+canBuild = 0;
 almost = 0;
 
 //GUI position
@@ -125,7 +127,8 @@ if(lives == 1){
 }
     
 //End Game
-if(lives == 0){
+if(lives &lt;= 0){
+    persistent = false;
     room_goto(rm_end);
     audio_stop_sound(bgm_game);
     audio_play_sound(sfx_gameover, 100, 0);
@@ -162,6 +165,11 @@ if(lives == 0){
     draw_text(view_wport*0.5, view_hport*0.5, "Wave " + string(wave));
     draw_set_color(c_black);
 }
+
+if(!instance_exists(obj_enemy))
+    if(spawnTime == 600 || (waveTime &lt; 0 &amp;&amp; spawnTime &gt; 15 &amp;&amp; waveEnemies == 0)){
+        scr_instructionCheck();
+    }
 </string>
           </argument>
         </arguments>
@@ -185,7 +193,7 @@ if(lives == 0){
           <argument>
             <kind>1</kind>
             <string>//HUD
-draw_sprite(spr_towerSlots, 0, gui_width, gui_height);
+//draw_sprite(spr_towerSlots, 0, gui_width, gui_height);
 draw_sprite(spr_tempScoreBoard, 0, 0, 0);
 
 draw_set_font(-1);
@@ -193,7 +201,7 @@ draw_set_font(-1);
 //Score, Lives and Wave Time
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
-draw_text(20, 13, 'Wave Time: ' + string(waveTime) + '#Next Wave in: ' + string(countdown) + '#Spawn Time: ' + string(spawnTime));
+draw_text(20, 13, 'Wave Time: ' + string(waveTime) + '#Next Wave in: ' + string(countdown) + '#Room Speed: ' + string(room_speed));
 
 //'#Firing: ' + string(ii_select.firing) +
 </string>
@@ -219,7 +227,7 @@ draw_text(20, 13, 'Wave Time: ' + string(waveTime) + '#Next Wave in: ' + string(
           <argument>
             <kind>1</kind>
             <string>if(waveEnemies = 0 &amp;&amp; !instance_exists(obj_enemy)){
-    wave += 1;
+    //wave += 1;
     waveTime = -1;
     spawnTime = 0;
     waveEnemies = min(5+floor(wave*0.4),16);

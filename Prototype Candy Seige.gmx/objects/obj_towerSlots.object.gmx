@@ -4,49 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <persistent>-1</persistent>
+  <parentName>obj_GUIManager</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>511</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_rectangle</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>64</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>512</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>64</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -63,7 +25,71 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x+20,y+10, "Tower Slots");
+            <string>width = 465 * global.scale_factor;
+height = 54 * global.scale_factor;
+left = view_wport * 0.41875;
+top = view_hport * 0.91;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(lives &lt;= 0){
+    persistent = false;
+    exit;
+}
+
+if(!instance_exists(obj_btnGumball)){
+    instance_create(left + width*0.077419354, top + height*0.50, obj_btnGumball);
+    instance_create(left + width*0.217204301, top + height*0.50, obj_btnPiping);
+    instance_create(left + width*0.361290322, top + height*0.50, obj_btnSugarlaser);
+    instance_create(left + width*0.501075268, top + height*0.50, obj_btnBlowtorch);
+    instance_create(left + width*0.634408602, top + height*0.50, obj_prototypeButton);
+    instance_create(left + width*0.784946236, top + height*0.50, obj_sell);
+    instance_create(left + width*0.922580645, top + height*0.50, obj_upgrade);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!instance_exists(controller)) exit;
+
+draw_sprite_ext(spr_towerSlots, 0, left, top, global.scale_factor, global.scale_factor, 0, -1, 1);
 </string>
           </argument>
         </arguments>

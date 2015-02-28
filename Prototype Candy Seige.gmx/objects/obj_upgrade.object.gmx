@@ -3,9 +3,9 @@
   <spriteName>spr_upgrade</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10000</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="3" enumb="0">
@@ -37,7 +37,7 @@ else{
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="7">
+    <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -54,7 +54,9 @@ else{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select != noone){
+            <string>if(controller.canBuild == 1) exit;
+
+if(controller.ii_select != noone){
     var ii;
     ii = controller.ii_select;
     if(ii.level &lt; 5){
@@ -74,7 +76,7 @@ else{
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -91,7 +93,9 @@ else{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select.level == 5 || controller.ii_select == noone){
+            <string>if(controller.canBuild == 1) exit;
+
+if(controller.ii_select.level == 5 || controller.ii_select == noone || global.money &lt; price){
     draw_sprite(btn_idle, 0, x, y);
     exit;
 }
@@ -126,7 +130,9 @@ draw_self();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select != noone){
+            <string>if(controller.canBuild == 1) exit;
+
+if(controller.ii_select != noone){
     var ii;
     ii = controller.ii_select;
     if(ii.level &lt; 5){

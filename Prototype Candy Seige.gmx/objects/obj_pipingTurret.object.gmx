@@ -298,7 +298,9 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(active = 1){
+            <string>if(controller.canBuild == 1) exit;
+
+if(active = 1){
     if(selected = 0){
         obj_pipingTurret.selected = 0;
         selected = 1;
@@ -307,7 +309,7 @@ if(mouse_check_button_pressed(mb_right)) instance_destroy();
 }
 
 if(active == 0){
-    if (coll_path = 0){
+    if(coll_path == 0){
         active = 1;
         global.money -= price;
         audio_play_sound(sfx_towerPlace, 60, 0);

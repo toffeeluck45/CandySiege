@@ -28,11 +28,14 @@
             <string>event_inherited();
 
 //Tower Stats
-name = "SugarLaser";
+name = "Gumball Dispenser"
 damage = 25;
 range = 150;
 rate = 30;
 price = 10;
+
+//Bullet color
+color = 0;
 </string>
           </argument>
         </arguments>

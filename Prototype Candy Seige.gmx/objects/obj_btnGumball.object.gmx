@@ -3,9 +3,9 @@
   <spriteName>btn_gumball</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10000</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var ii;
+            <string>if(controller.canBuild == 1) exit;
+
+var ii;
 if(instance_position(mouse_x,mouse_y,obj_dispenser)) exit;
 if(global.money &lt; price) exit;
 ii = instance_create(x,y,obj_dispenser);
@@ -58,7 +60,7 @@ ii.active = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -75,8 +77,23 @@ ii.active = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(position_meeting(mouse_x, mouse_y, self))
+            <string>if(controller.canBuild == 1) exit;
+
+if(global.money &lt; price){
+    image_index = 2;
+    draw_self();
+    exit;
+}
+
+if(position_meeting(mouse_x, mouse_y, self)){
     image_index = 1;
+    draw_sprite(spr_pricetag, 0, x + 14, y - 42);
+    draw_set_color(c_yellow);
+    draw_set_valign(fa_middle);
+    draw_set_halign(fa_center);
+    draw_text(x + 14, y - 42, "Price: " + string(price));
+    draw_set_color(c_black);
+}
 else
     image_index = 0;
 

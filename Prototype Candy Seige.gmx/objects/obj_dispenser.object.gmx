@@ -32,9 +32,9 @@ name = "Gumball Dispenser"
 damage = 25;
 range = 150;
 rate = 30;
-price = 15;
+price = 10;
 
-//Bullet colot
+//Bullet color
 color = 0;
 </string>
           </argument>

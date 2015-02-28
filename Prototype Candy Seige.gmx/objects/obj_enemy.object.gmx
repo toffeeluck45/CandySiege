@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>path_start(path_lvl1,2,0,1);
+            <string>//path_start(path_lvl1, 2, 0, 1);
 
 hp = round(40+power(controller.wave,1.5)*10);
 
