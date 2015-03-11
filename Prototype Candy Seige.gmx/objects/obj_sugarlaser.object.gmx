@@ -32,7 +32,7 @@ name = "Gumball Dispenser"
 damage = 25;
 range = 150;
 rate = 30;
-price = 10;
+price = 20;
 
 //Bullet color
 color = 0;

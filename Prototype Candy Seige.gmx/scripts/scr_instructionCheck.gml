@@ -1,19 +1,38 @@
 //Case statements
 switch(global.level){
     case 1:
-        if(wave == 1 || wave = 2){
+        if(wave == 3 || wave == 7){
             canBuild = 1;
-            if(!instance_exists(obj_okButton)) instance_create(view_wport*0.50, view_hport*0.95 , obj_okButton);
+            if(!instance_exists(obj_okButton)) instance_create(view_wport*0.40625, view_hport*0.89166667 , obj_okButton);
+        }
+        else{
+            if(wave != maxWave){
+                wave += 1;
+                waveTime = 0;
+                countdown = 400;
+                spawnTime = -1;
+                canBuild = 0;
+            }
+        }
+        break;
+    case 2:
+        if(wave == 4){
+            canBuild = 1;
+            if(!instance_exists(obj_okButton)) instance_create(view_wport*0.40625, view_hport*0.89166667 , obj_okButton);
         }
         else{
             wave += 1;
             waveTime = 0;
-            countdown = 450;
+            countdown = 400;
             spawnTime = -1;
             canBuild = 0;
         }
         break;
     default:
-        //if(!instance_exists(obj_okButton)) instance_create(gui_width * 0.5, gui_height * 0.75, obj_okButton);
+        wave += 1;
+        waveTime = 0;
+        countdown = 400;
+        spawnTime = -1;
+        canBuild = 0;
         break;
 }

@@ -72,8 +72,8 @@
       </sprites>
       <sprites name="Information Board">
         <sprite>sprites\spr_infoBoard</sprite>
-        <sprite>sprites\spr_descBox</sprite>
         <sprite>sprites\btn_ok</sprite>
+        <sprite>sprites\spr_towerSprite</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_test</sprite>
@@ -85,18 +85,24 @@
     <background>background\bg_end</background>
     <background>background\bg_lvl1</background>
     <background>background\bg_lvl2</background>
+    <background>background\bg_lvl3</background>
+    <background>background\bg_lvl4</background>
     <background>background\bg_levelComplete</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_lvl1</path>
     <path>paths\path_lvl2</path>
+    <path>paths\path_lvl3</path>
+    <path>paths\path_lvl4_1</path>
+    <path>paths\path_lvl4_2</path>
   </paths>
   <scripts name="scripts">
     <scripts name="Interface">
       <script>scripts\scr_grid.gml</script>
       <script>scripts\scr_menu.gml</script>
-      <script>scripts\scr_wave.gml</script>
       <script>scripts\scr_instructionCheck.gml</script>
+      <script>scripts\scr_towerData.gml</script>
+      <script>scripts\scr_nextLevel.gml</script>
       <script>scripts\initGUI.gml</script>
     </scripts>
     <scripts name="Towers">
@@ -108,16 +114,23 @@
         <script>scripts\scr_jawbreaker.gml</script>
         <script>scripts\scr_laserbeam.gml</script>
         <script>scripts\scr_frosting.gml</script>
+        <script>scripts\scr_frostingtest.gml</script>
         <script>scripts\scr_flame.gml</script>
       </scripts>
     </scripts>
-    <script>scripts\scr_enemyGen.gml</script>
+    <scripts name="Enemies">
+      <script>scripts\scr_wave.gml</script>
+      <script>scripts\scr_chooseEnemy.gml</script>
+      <script>scripts\scr_chooseBoss.gml</script>
+      <script>scripts\scr_path.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_lives</font>
     <font>fonts\fnt_stats</font>
     <font>fonts\fnt_wave</font>
     <font>fonts\fnt_description</font>
+    <font>fonts\fnt_title</font>
   </fonts>
   <objects name="objects">
     <objects name="Menu *">
@@ -169,8 +182,12 @@
       </objects>
       <objects name="Information Board">
         <object>objects\obj_infoBoard</object>
-        <object>objects\obj_descBox</object>
+        <object>objects\obj_description</object>
         <object>objects\obj_okButton</object>
+      </objects>
+      <objects name="Level Complete">
+        <object>objects\obj_lvlComplete</object>
+        <object>objects\obj_nextLevelBtn</object>
       </objects>
     </objects>
     <object>objects\obj_wave</object>
@@ -183,10 +200,15 @@
     <room>rooms\rm_story</room>
     <room>rooms\rm_lvl1</room>
     <room>rooms\rm_lvl2</room>
+    <room>rooms\rm_lvl3</room>
+    <room>rooms\rm_lvl4</room>
   </rooms>
-  <constants number="2">
+  <constants number="5">
     <constant name="gui_width">800</constant>
     <constant name="gui_height">600</constant>
+    <constant name="maxWave">4</constant>
+    <constant name="wTime">400</constant>
+    <constant name="sTime">1000</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

@@ -25,13 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(controller.ii_select.level == 5) exit;
+            <string>ii = controller.ii_select;
 
-if(controller.ii_select == noone) draw_sprite(btn_idle, 0, x, y);
-else{
-    if(controller.ii_select.level &lt; 5) price = floor(controller.ii_select.price*0.4);
-    else price = 'MAX';
-}
+if(ii.level &gt; 5 || ii == noone) exit;
+
+if(controller.ii_select.level &lt; 5) price = floor(controller.ii_select.price*2);
+else price = 'MAX';
 </string>
           </argument>
         </arguments>
@@ -65,7 +64,7 @@ if(controller.ii_select != noone){
             ii.damage = round(ii.damage*1.1);
             ii.range = round(ii.range*1.1);
             ii.rate = ii.rate - floor(ii.rate*0.10);
-            ii.price = round(ii.price*1.5);
+            ii.price = round(ii.price*2);
             ii.level += 1;
             audio_play_sound(sfx_upgrade, 50, 0);
         }
@@ -96,12 +95,22 @@ if(controller.ii_select != noone){
             <string>if(controller.canBuild == 1) exit;
 
 if(controller.ii_select.level == 5 || controller.ii_select == noone || global.money &lt; price){
-    draw_sprite(btn_idle, 0, x, y);
+    sprite_index = btn_idle;
+    draw_self();
     exit;
 }
 
-if(position_meeting(mouse_x, mouse_y, self))
+ii = controller.ii_select;
+
+if(position_meeting(mouse_x, mouse_y, self)){
     sprite_index = spr_up;
+    draw_sprite_ext(spr_pricetag, 0, x - 14, y - 42, global.scale_factor, global.scale_factor, 0, -1, 1);
+    draw_set_color(c_yellow);
+    draw_set_valign(fa_middle);
+    draw_set_halign(fa_center);
+    draw_text(x - 14, y - 42, "UP Price: " + string(round(ii.price*2)));
+    draw_set_color(c_black);
+}
 else
     sprite_index = spr_upgrade;
 
@@ -141,7 +150,7 @@ if(controller.ii_select != noone){
             ii.damage = round(ii.damage*1.1);
             ii.range = round(ii.range*1.1);
             ii.rate = ii.rate - floor(ii.rate*0.10);
-            ii.price = round(ii.price*1.5);
+            ii.price = round(ii.price*2);
             ii.level += 1;
             audio_play_sound(sfx_upgrade, 50, 0);
         }

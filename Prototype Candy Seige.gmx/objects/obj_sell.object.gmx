@@ -87,8 +87,17 @@ if(controller.ii_select == noone){
     exit;
 }
 
-if(position_meeting(mouse_x, mouse_y, self))
+ii = controller.ii_select;
+
+if(position_meeting(mouse_x, mouse_y, self)){
     image_index = 1;
+    draw_sprite(spr_pricetag, 0, x, y - 42);
+    draw_set_color(c_yellow);
+    draw_set_valign(fa_middle);
+    draw_set_halign(fa_center);
+    draw_text(x, y - 42, "Sell: " + string(floor(ii.price/2)));
+    draw_set_color(c_black);
+}
 else
     image_index = 0;
 

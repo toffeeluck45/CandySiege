@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="800" hview="600" xport="0" yport="0" wport="800" hport="600" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="800" hview="600" xport="0" yport="0" wport="800" hport="600" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -50,7 +50,16 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="obj_marker" x="0" y="352" name="inst_0D4BF75B" locked="0" code="" scaleX="10" scaleY="7.74193525314331" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="320" y="544" name="inst_CC0B3758" locked="0" code="" scaleX="15" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="488" y="142" name="inst_58C03F2C" locked="0" code="" scaleX="9.75" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="488" y="222" name="inst_4A46322E" locked="0" code="" scaleX="2.75" scaleY="9.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="252" y="440" name="inst_14186652" locked="0" code="" scaleX="7.375" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="264" y="148" name="inst_6ABF9F5F" locked="0" code="" scaleX="2.63000011444092" scaleY="9.125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="48" y="148" name="inst_40B5E536" locked="0" code="" scaleX="6.75" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="48" y="228" name="inst_4225C94A" locked="0" code="" scaleX="2.5" scaleY="4.5625" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

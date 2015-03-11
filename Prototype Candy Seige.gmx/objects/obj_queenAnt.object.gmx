@@ -25,9 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>path_start(path_lvl1, 2.5, 0, 1);
+            <string>mySpeed = 2.5;
+path_start(path_lvl1, 2.5, 0, 1);
 
-hp = 500;
+hp = 1000;
 
 hpBuff = 100;
 </string>
@@ -53,11 +54,11 @@ hpBuff = 100;
           <argument>
             <kind>1</kind>
             <string>if(hp &lt;= 0){
-    global.money = 50;
-    global.level += 1;
-    wave = 1;
     instance_destroy();
-    room_goto(rm_lvl2);
+    audio_stop_sound(bgm_game);
+    controller.canBuild = 1;
+    if(!instance_exists(obj_nextLevelBtn)) 
+        instance_create(view_wport*0.50, view_hport*0.80, obj_nextLevelBtn)
 }
     // victory sound 
     // go to level complete room
@@ -84,8 +85,13 @@ hpBuff = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
-lives -= 2;
+            <string>lives -= 2;
+instance_destroy();
+
+audio_stop_sound(bgm_game);
+controller.canBuild = 1;
+if(!instance_exists(obj_nextLevelBtn)) 
+    instance_create(view_wport*0.50, view_hport*0.80, obj_nextLevelBtn);
 </string>
           </argument>
         </arguments>

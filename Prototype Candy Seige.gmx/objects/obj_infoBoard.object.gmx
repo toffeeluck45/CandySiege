@@ -50,9 +50,8 @@
             <kind>1</kind>
             <string>if(!instance_exists(myParent)) instance_destroy();
 
-if(!instance_exists(obj_descBox))
-    //with(instance_create(view_wport*0.30, view_hport*0.50, obj_descBox)){
-    with(instance_create(x, y, obj_descBox)){
+if(!instance_exists(obj_description))
+    with(instance_create(x, y, obj_description)){
         myParent = other.id;
     }
 </string>

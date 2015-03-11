@@ -75,7 +75,7 @@ score = 0;
 wave = 1;
 waveTime = 0;
 waveEnemies = 0;
-countdown = 450;
+countdown = 400;
 spawnTime = -1;
 
 ii_select = noone;
@@ -122,7 +122,7 @@ if(lives == 1){
     almost += 1;
     if (!audio_is_playing(sfx_almost) &amp;&amp; almost == 1){
         almost = 0;
-        audio_play_sound(sfx_almost, 100, 0);
+        audio_play_sound(sfx_almost, 900, 0);
     }
 }
     
@@ -160,9 +160,16 @@ if(lives &lt;= 0){
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_set_color(c_black);
-    draw_text(view_wport*0.5 + 3, view_hport*0.5 + 2, "Wave " + string(wave));
-    draw_set_color(c_lime);
-    draw_text(view_wport*0.5, view_hport*0.5, "Wave " + string(wave));
+    if(wave != maxWave){
+        draw_text(view_wport*0.5 + 3, view_hport*0.5 + 2, "Wave " + string(wave));
+        draw_set_color(c_lime);
+        draw_text(view_wport*0.5, view_hport*0.5, "Wave " + string(wave));
+    }
+    else{
+        draw_text(view_wport*0.5 + 3, view_hport*0.5 + 2, "BOSS WAVE");
+        draw_set_color(c_lime);
+        draw_text(view_wport*0.5, view_hport*0.5, "BOSS WAVE");
+    }
     draw_set_color(c_black);
 }
 
@@ -193,7 +200,6 @@ if(!instance_exists(obj_enemy))
           <argument>
             <kind>1</kind>
             <string>//HUD
-//draw_sprite(spr_towerSlots, 0, gui_width, gui_height);
 draw_sprite(spr_tempScoreBoard, 0, 0, 0);
 
 draw_set_font(-1);
@@ -201,7 +207,7 @@ draw_set_font(-1);
 //Score, Lives and Wave Time
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
-draw_text(20, 13, 'Wave Time: ' + string(waveTime) + '#Next Wave in: ' + string(countdown) + '#Room Speed: ' + string(room_speed));
+draw_text(20, 13, 'Wave Time: ' + string(waveTime) + '#Next Wave in: ' + string(countdown) + '#Spawn Time: ' + string(spawnTime));
 
 //'#Firing: ' + string(ii_select.firing) +
 </string>
@@ -227,11 +233,16 @@ draw_text(20, 13, 'Wave Time: ' + string(waveTime) + '#Next Wave in: ' + string(
           <argument>
             <kind>1</kind>
             <string>if(waveEnemies = 0 &amp;&amp; !instance_exists(obj_enemy)){
-    //wave += 1;
-    waveTime = -1;
     spawnTime = 0;
-    waveEnemies = min(5+floor(wave*0.4),16);
-    ee = waveEnemies;
+    waveTime = -1
+    if(wave &lt; maxWave){
+        waveEnemies = 5+wave+global.level+floor(wave*0.8);
+        ee = waveEnemies;        
+    }
+    else if(wave == maxWave){
+        waveEnemies = 1;
+        ee = 1;
+    }
 }
 </string>
           </argument>

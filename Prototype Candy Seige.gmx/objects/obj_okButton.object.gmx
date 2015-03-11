@@ -8,29 +8,6 @@
   <parentName>obj_GUIManager</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//myParent = inst_infoBoard;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -77,7 +54,7 @@
             <string>//Start the timer again
 controller.wave += 1;
 controller.waveTime = 0;
-controller.countdown = 450;
+controller.countdown = 400;
 controller.spawnTime = -1;
 controller.canBuild = 0;
 
@@ -105,7 +82,12 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>if(position_meeting(mouse_x, mouse_y, self))
+    image_index = 1;
+else
+    image_index = 0;
+    
+draw_self();
 </string>
           </argument>
         </arguments>

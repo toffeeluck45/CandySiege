@@ -108,7 +108,7 @@ draw_text(left + width + left/2, top, 'Magic Sugar: ' + string(global.money) + '
 
 //Selected Tower Stats
 if(controller.ii_select != noone){
-    draw_text(left + width + left/2, 560, 'Damage: ' + string(controller.ii_select.damage) + ' HP' + '#Upgrade Price: ' + string(controller.ii_select.price*0.4));
+    draw_text(left + width + left/2, 560, 'Damage: ' + string(controller.ii_select.damage) + ' HP' + '#Tower Price: ' + string(controller.ii_select.price));
 }
 
 </string>

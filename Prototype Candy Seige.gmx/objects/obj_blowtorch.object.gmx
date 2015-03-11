@@ -32,8 +32,7 @@ name = "Blowtorch"
 damage = 5;
 range = 100;
 rate = 30;
-price = 10;
-flame = 0;
+price = 30;
 
 //Tower Angle
 image_angle = 90;
