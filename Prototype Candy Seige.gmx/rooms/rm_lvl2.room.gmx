@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>600</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -59,6 +59,7 @@
     <instance objName="obj_marker" x="264" y="148" name="inst_6ABF9F5F" locked="0" code="" scaleX="2.63000011444092" scaleY="9.125" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="48" y="148" name="inst_40B5E536" locked="0" code="" scaleX="6.75" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="48" y="228" name="inst_4225C94A" locked="0" code="" scaleX="2.5" scaleY="4.5625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="0" y="0" name="inst_E5708F73" locked="0" code="" scaleX="25.0322589874268" scaleY="1.75" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

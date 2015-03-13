@@ -39,7 +39,7 @@ switch(global.level){
             draw_set_halign(fa_left);
             draw_set_valign(fa_top);
             draw_set_color(c_black);
-            draw_text_ext(left + (width*0.0259067), top + height*0.034482, "Once these blowtorches served only in the fiery forges of the Candy Kingdom! Now it's a weapon that burns our enemies to crisp.", 48, 380);
+            draw_text_ext(left + (width*0.0259067), top + height*0.034482, "Once these blowtorches served only in the fiery forges of the Candy Kingdom! Now it's a weapon that burns our enemies to crisp. It can't turn so you have to turn them manually.", 48, 380);
         }
     default: break;
 }

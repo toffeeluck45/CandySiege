@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>600</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -222,7 +222,7 @@
     <instance objName="obj_marker" x="224" y="320" name="inst_15A2A4D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="256" y="360" name="inst_CB2FB443" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="0" y="512" name="inst_DE591B4F" locked="0" code="" scaleX="11" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_marker" x="0" y="0" name="inst_79932C98" locked="0" code="" scaleX="6" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_marker" x="0" y="0" name="inst_79932C98" locked="0" code="" scaleX="25.8064517974854" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="controller" x="224" y="32" name="inst_controller" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_marker" x="352" y="544" name="inst_A1B02117" locked="0" code="" scaleX="14" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_GUIManager" x="256" y="32" name="inst_GUIManager" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

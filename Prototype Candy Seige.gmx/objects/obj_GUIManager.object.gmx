@@ -30,6 +30,8 @@ height = 0;
 top = 0;
 left = 0;
 
+toNext = 0;
+
 myParent = noone;
 
 ii_select = noone;
@@ -55,7 +57,7 @@ ii_select = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(lives &lt;= 0)
+            <string>if(lives &lt;= 0 || toNext == 1)
     persistent = false;
 </string>
           </argument>

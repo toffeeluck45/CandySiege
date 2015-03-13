@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>myParent = noone;
+
+audio_play_sound(sfx_lvlComplete, 90, 0);
 </string>
           </argument>
         </arguments>
@@ -80,7 +82,7 @@ height = 600 * global.scale_factor;
 left = 0;
 top = 0;
 
-draw_sprite_ext(spr_infoBoard, 0, left, top, global.scale_factor, global.scale_factor, 0, -1, 1);
+draw_sprite_ext(spr_levelcomplete, 0, left, top, global.scale_factor, global.scale_factor, 0, -1, 1);
 
 // Format Score and description
 </string>

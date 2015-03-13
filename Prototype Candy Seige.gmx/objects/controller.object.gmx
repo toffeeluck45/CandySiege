@@ -81,6 +81,7 @@ spawnTime = -1;
 ii_select = noone;
 canBuild = 0;
 almost = 0;
+toNext = 0;
 
 //GUI position
 left = 0;
@@ -125,8 +126,11 @@ if(lives == 1){
         audio_play_sound(sfx_almost, 900, 0);
     }
 }
-    
-//End Game
+
+//End Game - Win
+if(toNext == 1) persistent = false;
+
+//End Game - Lost
 if(lives &lt;= 0){
     persistent = false;
     room_goto(rm_end);

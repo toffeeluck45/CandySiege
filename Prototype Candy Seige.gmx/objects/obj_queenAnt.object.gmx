@@ -58,7 +58,7 @@ hpBuff = 100;
     audio_stop_sound(bgm_game);
     controller.canBuild = 1;
     if(!instance_exists(obj_nextLevelBtn)) 
-        instance_create(view_wport*0.50, view_hport*0.80, obj_nextLevelBtn)
+        instance_create(610, 500, obj_nextLevelBtn)
 }
     // victory sound 
     // go to level complete room
@@ -91,7 +91,7 @@ instance_destroy();
 audio_stop_sound(bgm_game);
 controller.canBuild = 1;
 if(!instance_exists(obj_nextLevelBtn)) 
-    instance_create(view_wport*0.50, view_hport*0.80, obj_nextLevelBtn);
+    instance_create(610, 500, obj_nextLevelBtn);
 </string>
           </argument>
         </arguments>
@@ -114,9 +114,7 @@ if(!instance_exists(obj_nextLevelBtn))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.pause) exit;
-
-//To make enemies face the right direction
+            <string>//To make enemies face the right direction
 image_angle = direction;
 
 draw_self();

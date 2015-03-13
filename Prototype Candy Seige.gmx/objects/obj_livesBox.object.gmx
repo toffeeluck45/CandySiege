@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>myParent = inst_statBoard;
+
+toNext = 0;
 </string>
           </argument>
         </arguments>
@@ -48,7 +50,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(lives &lt;= 0)
+            <string>if(lives &lt;= 0 || toNext == 1)
     persistent = false;
 </string>
           </argument>

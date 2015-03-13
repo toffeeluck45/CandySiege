@@ -29,6 +29,8 @@
 height = 54 * global.scale_factor;
 left = view_wport * 0.41875;
 top = view_hport * 0.91;
+
+toNext = 0;
 </string>
           </argument>
         </arguments>
@@ -51,7 +53,7 @@ top = view_hport * 0.91;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(lives &lt;= 0){
+            <string>if(lives &lt;= 0 || toNext == 1){
     persistent = false;
     exit;
 }

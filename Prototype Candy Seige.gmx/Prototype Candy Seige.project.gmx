@@ -9,6 +9,7 @@
     <sounds name="Background Music">
       <sound>sound\bgm_mainmenu</sound>
       <sound>sound\bgm_game</sound>
+      <sound>sound\bgm_story</sound>
     </sounds>
     <sounds name="Sound Effects">
       <sound>sound\sfx_gameover</sound>
@@ -20,10 +21,10 @@
       <sound>sound\sfx_towerPlace</sound>
       <sound>sound\sfx_sell</sound>
       <sound>sound\sfx_upgrade</sound>
+      <sound>sound\sfx_lvlComplete</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_ground</sprite>
     <sprites name="Towers">
       <sprite>sprites\spr_piping</sprite>
       <sprite>sprites\spr_gumball</sprite>
@@ -32,7 +33,6 @@
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_ant</sprite>
-      <sprite>sprites\spr_deathAnt</sprite>
       <sprite>sprites\spr_queenAnt</sprite>
     </sprites>
     <sprites name="Tower Projectiles">
@@ -75,6 +75,10 @@
         <sprite>sprites\btn_ok</sprite>
         <sprite>sprites\spr_towerSprite</sprite>
       </sprites>
+      <sprites name="Level Complete">
+        <sprite>sprites\spr_levelcomplete</sprite>
+        <sprite>sprites\btn_nextLevel</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\spr_story</sprite>
@@ -82,12 +86,14 @@
   <backgrounds name="background">
     <background>background\bg_mainMenu</background>
     <background>background\bg_optionsMenu</background>
+    <background>background\bg_pauseScreen</background>
     <background>background\bg_end</background>
+    <background>background\bg_gameWon</background>
     <background>background\bg_lvl1</background>
     <background>background\bg_lvl2</background>
     <background>background\bg_lvl3</background>
     <background>background\bg_lvl4</background>
-    <background>background\bg_levelComplete</background>
+    <background>background\bg_lvl5</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_lvl1</path>
@@ -95,6 +101,7 @@
     <path>paths\path_lvl3</path>
     <path>paths\path_lvl4_1</path>
     <path>paths\path_lvl4_2</path>
+    <path>paths\path_lvl5</path>
   </paths>
   <scripts name="scripts">
     <scripts name="Interface">
@@ -142,7 +149,7 @@
       <object>objects\obj_main</object>
     </objects>
     <objects name="Story">
-      <object>objects\obj_story1</object>
+      <object>objects\obj_story</object>
     </objects>
     <objects name="Tower Projectile">
       <object>objects\obj_jawbreaker</object>
@@ -165,6 +172,7 @@
       <object>objects\obj_gameover</object>
       <object>objects\obj_bgmController</object>
       <object>objects\obj_GUIManager</object>
+      <object>objects\obj_gameWon</object>
       <object>objects\obj_marker</object>
       <objects name="TowerSlots">
         <object>objects\obj_towerSlots</object>
@@ -190,8 +198,6 @@
         <object>objects\obj_nextLevelBtn</object>
       </objects>
     </objects>
-    <object>objects\obj_wave</object>
-    <object>objects\obj_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
@@ -202,11 +208,13 @@
     <room>rooms\rm_lvl2</room>
     <room>rooms\rm_lvl3</room>
     <room>rooms\rm_lvl4</room>
+    <room>rooms\rm_lvl5</room>
+    <room>rooms\rm_gameWon</room>
   </rooms>
   <constants number="5">
     <constant name="gui_width">800</constant>
     <constant name="gui_height">600</constant>
-    <constant name="maxWave">4</constant>
+    <constant name="maxWave">11</constant>
     <constant name="wTime">400</constant>
     <constant name="sTime">1000</constant>
   </constants>

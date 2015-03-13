@@ -27,10 +27,10 @@
             <kind>1</kind>
             <string>//Tower Stats
 name = "Piping Turret";
-damage = 20;
+damage = 10;
 range = 150;
 rate = 30;
-price = 1;
+price = 20;
 
 //Status
 firing = 0;

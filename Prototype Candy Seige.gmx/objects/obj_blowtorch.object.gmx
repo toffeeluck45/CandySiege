@@ -29,7 +29,7 @@
 
 //Tower Stats
 name = "Blowtorch"
-damage = 5;
+damage = 8;
 range = 100;
 rate = 30;
 price = 30;

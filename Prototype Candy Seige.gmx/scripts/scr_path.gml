@@ -9,7 +9,7 @@ switch(global.level){
         path_start(path_lvl3, 2, 0, 1);
         break;
     case 4:
-        if(wave < 2) path_start(path_lvl4_1, 2, 0, 1);
+        if(controller.wave < 2) path_start(path_lvl4_1, 2, 0, 1);
         else path_start(choose(path_lvl4_1, path_lvl4_2), 2, 0, 1);
         break;
     default:

@@ -74,6 +74,7 @@ draw_self();
           <argument>
             <kind>1</kind>
             <string>room_goto(rm_lvl1);
+audio_stop_sound(bgm_story);
 audio_play_sound(bgm_game, 100, 1);
 </string>
           </argument>
@@ -99,6 +100,7 @@ audio_play_sound(bgm_game, 100, 1);
             <kind>1</kind>
             <string>if(page == 2){
     room_goto(rm_lvl1);
+    audio_stop_sound(bgm_story);
     audio_play_sound(bgm_game, 100, 1);
 }
 

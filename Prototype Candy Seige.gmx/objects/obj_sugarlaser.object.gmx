@@ -29,7 +29,7 @@
 
 //Tower Stats
 name = "Gumball Dispenser"
-damage = 25;
+damage = 40;
 range = 150;
 rate = 30;
 price = 20;
