@@ -1,3 +1,0 @@
-wave = argument[0];
-
-
